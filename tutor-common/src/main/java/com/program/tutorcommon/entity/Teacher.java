@@ -38,7 +38,7 @@ public class Teacher {
     private Date birthday;
 
     @Column(nullable = false)
-    @JsonFormat(pattern = Constants.DATE_FORMAT, timezone = "GMT+8")
+    @JsonFormat(pattern = Constants.DATETIME_FORMAT, timezone = "GMT+8")
     private Date initDate;
 
     private String birthPlace;
