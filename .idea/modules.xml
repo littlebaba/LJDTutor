@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LJDTutor.iml" filepath="$PROJECT_DIR$/.idea/LJDTutor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutor-common/tutor-common.iml" filepath="$PROJECT_DIR$/tutor-common/tutor-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tutor-parent/tutor-parent.iml" filepath="$PROJECT_DIR$/tutor-parent/tutor-parent.iml" />
     </modules>
   </component>
 </project>
