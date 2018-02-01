@@ -6,6 +6,8 @@ import com.program.tutorcommon.utils.Constants;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Li on 2018/1/31.
@@ -69,6 +71,12 @@ public class Teacher {
 
     @Column(nullable = false)
     private String contactAddr;
+
+
+    //学生与教员的关联关系
+    @JsonIgnore
+    @ManyToMany(mappedBy = "teachers")
+    private Set<Student> students = new HashSet<Student>();
 
     public Integer getId() {
         return id;

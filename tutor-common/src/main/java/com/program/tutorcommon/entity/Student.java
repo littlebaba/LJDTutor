@@ -1,11 +1,14 @@
 package com.program.tutorcommon.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.program.tutorcommon.utils.Constants;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Li on 2018/1/31.
@@ -29,20 +32,34 @@ public class Student implements Serializable {
     @Column(nullable = false)
     private String mobilePhone;
 
-    private String area;
+    @Column(nullable = false)
+    @JsonIgnore
+    private String password;
+
+    @ManyToOne
+    @JoinColumn(nullable = false,name = "area_id")
+    private Area area;
 
     private String areaDes;
 
     //学员信息
     private Integer sex = 0; //0:男 1：女
 
-    @Column(nullable = false)
-    private String grade;
+    @ManyToOne
+    @JoinColumn(nullable = false,name = "grade_id")
+    private Grade grade;
 
     private String classTime;
 
     private String studentDes;
     //对教员的要求
+
+    @JsonIgnore
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "tutor_student_teacher",
+    joinColumns = {@JoinColumn(name = "student_id",referencedColumnName = "id")},
+    inverseJoinColumns = {@JoinColumn(name="teacher_id",referencedColumnName = "id")})
+    private Set<Teacher> teachers = new HashSet<Teacher>();
 
 
     private Integer reqTeaSex = 2;////0:男 1：女 2：男女均可
@@ -56,6 +73,8 @@ public class Student implements Serializable {
     @Column(nullable = false)
     @JsonFormat(pattern = Constants.DATETIME_FORMAT, timezone = "GMT+8")
     private Date initDate;
+
+
 
     public Date getInitDate() {
         return initDate;
@@ -97,12 +116,20 @@ public class Student implements Serializable {
         this.mobilePhone = mobilePhone;
     }
 
-    public String getArea() {
+    public Area getArea() {
         return area;
     }
 
-    public void setArea(String area) {
+    public void setArea(Area area) {
         this.area = area;
+    }
+
+    public Grade getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 
     public String getAreaDes() {
@@ -121,13 +148,7 @@ public class Student implements Serializable {
         this.sex = sex;
     }
 
-    public String getGrade() {
-        return grade;
-    }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
 
     public String getClassTime() {
         return classTime;
@@ -169,7 +190,13 @@ public class Student implements Serializable {
         this.pay = pay;
     }
 
+    public Set<Teacher> getTeachers() {
+        return teachers;
+    }
 
+    public void setTeachers(Set<Teacher> teachers) {
+        this.teachers = teachers;
+    }
     @Override
     public String toString() {
         return "Student{" +
