@@ -7,6 +7,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -27,4 +29,8 @@ public interface StudentDao extends JpaRepository<Student,Integer>,JpaSpecificat
 
     @Override
     List<Student> findAll(Sort sort);
+
+    @Query(value = "select u from Student u where u.mobilePhone=?1")
+    Object findStudentByMobile(String mobilePhone);
+
 }
