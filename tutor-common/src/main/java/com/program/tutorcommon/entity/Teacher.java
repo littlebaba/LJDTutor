@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.program.tutorcommon.utils.Constants;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -14,7 +15,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "totur_teacher")
-public class Teacher {
+public class Teacher implements Serializable {
 
     @Id
     @GeneratedValue
@@ -140,6 +141,14 @@ public class Teacher {
 
     public void setEducation(String education) {
         this.education = education;
+    }
+
+    public Set<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(Set<Student> students) {
+        this.students = students;
     }
 
     public String getIdNumber() {

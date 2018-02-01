@@ -7,11 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tutor-common" />
-        <module name="tutor-parent" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tutor-common" target="1.5" />
+      <module name="tutor-common" target="1.8" />
       <module name="tutor-parent" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -32,8 +32,7 @@ public class Student implements Serializable {
     @Column(nullable = false)
     private String mobilePhone;
 
-    @Column(nullable = false)
-    @JsonIgnore
+
     private String password;
 
     @ManyToOne
@@ -197,6 +196,15 @@ public class Student implements Serializable {
     public void setTeachers(Set<Teacher> teachers) {
         this.teachers = teachers;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
