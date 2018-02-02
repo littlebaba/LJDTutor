@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" th:href="@{/css/layui.css}"/>
+
+</head>
+<body>
+
+    <ul class="layui-nav layui-bg-molv" lay-filter="">
+        <li class="layui-nav-item"><a href="">首页</a></li>
+        <li class="layui-nav-item layui-this"><a href="">请老师</a></li>
+        <li class="layui-nav-item"><a href="">做老师</a></li>
+        <li class="layui-nav-item"><a href="">教员库</a></li>
+        <li class="layui-nav-item"><a href="">学员库</a></li>
+    </ul>
+
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-md8">
+                <table id="student" class="layui-table" lay-size="sm">
+                    <colgroup>
+                        <col width="100">
+                        <col width="200">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th width="20%">年级</th>
+                            <th width="20%">性别</th>
+                            <th width="20%">求教科目</th>
+                            <th width="20%">授课区域</th>
+                            <th width="20%">更新时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>贤心</td>
+                            <td>贤心</td>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>人生就像是一场修行</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+            //监听导航点击
+            element.on('nav(demo)', function (elem) {
+                //console.log(elem)
+                layer.msg(elem.text());
+            });
+        });
+
+        var table = layui.table;
+
+        table.render({
+            elem: '#student',
+            cols:[[
+                {field:'grade', width:'20%', title: '年级'},
+                {field:'sex', width:'20%', title: '性别'},
+                {field:'subject', width:'20%', title: '求教科目'},
+                {field:'area', width:'20%', title: '授课区域'},
+                {field:'initDate', width:'20%', title: '更新时间'}
+            ]]
+        });
+
+    </script>
+    <script type="text/javascript" th:src="@{/js/layui.all.js}" charset="utf-8"></script>
+</body>
+</html>

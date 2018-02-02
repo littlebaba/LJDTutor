@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/tutor-parent/pom.xml" />
         <option value="$PROJECT_DIR$/tutor-common/pom.xml" />
+        <option value="$PROJECT_DIR$/totur-totur/pom.xml" />
       </list>
     </option>
   </component>

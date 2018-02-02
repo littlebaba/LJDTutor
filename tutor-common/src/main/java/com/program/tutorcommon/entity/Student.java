@@ -48,6 +48,8 @@ public class Student implements Serializable {
     @JoinColumn(nullable = false,name = "grade_id")
     private Grade grade;
 
+    private Subject subject;
+
     private String classTime;
 
     private String studentDes;
@@ -203,6 +205,15 @@ public class Student implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
     }
 
     @Override
