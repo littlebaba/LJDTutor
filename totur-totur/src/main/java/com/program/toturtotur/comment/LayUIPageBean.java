@@ -10,8 +10,8 @@ public class LayUIPageBean<T> implements Serializable{
     private int code ;
     private String msg;
     private long count;
-    private Integer page;
-    private Integer limit;
+//    private Integer page;
+//    private Integer limit;
     private List<T> data;
 
     public int getCode() {
@@ -38,21 +38,21 @@ public class LayUIPageBean<T> implements Serializable{
         this.count = count;
     }
 
-    public Integer getPage() {
-        return page;
-    }
-
-    public void setPage(Integer page) {
-        this.page = page;
-    }
-
-    public Integer getLimit() {
-        return limit;
-    }
-
-    public void setLimit(Integer limit) {
-        this.limit = limit;
-    }
+//    public Integer getPage() {
+//        return page;
+//    }
+//
+//    public void setPage(Integer page) {
+//        this.page = page;
+//    }
+//
+//    public Integer getLimit() {
+//        return limit;
+//    }
+//
+//    public void setLimit(Integer limit) {
+//        this.limit = limit;
+//    }
 
     public List<T> getData() {
         return data;
@@ -68,8 +68,8 @@ public class LayUIPageBean<T> implements Serializable{
                 "code=" + code +
                 ", msg='" + msg + '\'' +
                 ", count=" + count +
-                ", page=" + page +
-                ", limit=" + limit +
+//                ", page=" + page +
+//                ", limit=" + limit +
                 ", data=" + data +
                 '}';
     }

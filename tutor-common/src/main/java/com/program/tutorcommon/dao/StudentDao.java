@@ -33,4 +33,5 @@ public interface StudentDao extends JpaRepository<Student,Integer>,JpaSpecificat
     @Query(value = "select u from Student u where u.mobilePhone=?1")
     Object findStudentByMobile(String mobilePhone);
 
+
 }

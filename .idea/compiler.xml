@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="totur-totur" target="1.5" />
+      <module name="totur-totur" target="1.8" />
       <module name="tutor-common" target="1.8" />
       <module name="tutor-parent" target="1.5" />
     </bytecodeTargetLevel>

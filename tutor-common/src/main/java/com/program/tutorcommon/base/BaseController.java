@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory;
  * @author Li on 2018/2/1.
  */
 public class BaseController {
-    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
-    protected TutorResult restProcessor(ResultProcessor processor){
+    public final Logger logger = LoggerFactory.getLogger(this.getClass());
+    public TutorResult restProcessor(ResultProcessor processor){
         TutorResult result = null;
         try {
             result = processor.process();

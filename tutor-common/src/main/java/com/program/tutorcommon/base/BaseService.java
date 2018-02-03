@@ -1,10 +1,13 @@
 package com.program.tutorcommon.base;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
  * @author Li on 2018/2/1.
  */
+
 public interface BaseService<T> {
 
     T findOne(int key);
@@ -15,4 +18,6 @@ public interface BaseService<T> {
 
     List<T> findAll();
 
+
+    long getCount();
 }
