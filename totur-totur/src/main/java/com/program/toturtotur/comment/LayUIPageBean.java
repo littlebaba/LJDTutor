@@ -1,5 +1,7 @@
 package com.program.toturtotur.comment;
 
+import org.springframework.data.domain.Page;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -37,22 +39,6 @@ public class LayUIPageBean<T> implements Serializable{
     public void setCount(long count) {
         this.count = count;
     }
-
-//    public Integer getPage() {
-//        return page;
-//    }
-//
-//    public void setPage(Integer page) {
-//        this.page = page;
-//    }
-//
-//    public Integer getLimit() {
-//        return limit;
-//    }
-//
-//    public void setLimit(Integer limit) {
-//        this.limit = limit;
-//    }
 
     public List<T> getData() {
         return data;

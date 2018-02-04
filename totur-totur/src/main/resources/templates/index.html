@@ -10,8 +10,8 @@
 <body>
 
     <ul class="layui-nav layui-bg-molv" lay-filter="">
-        <li class="layui-nav-item"><a href="">首页</a></li>
-        <li class="layui-nav-item layui-this"><a href="">请老师</a></li>
+        <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+        <li class="layui-nav-item"><a href="">请老师</a></li>
         <li class="layui-nav-item"><a href="">做老师</a></li>
         <li class="layui-nav-item"><a href="">教员库</a></li>
         <li class="layui-nav-item"><a href="">学员库</a></li>
@@ -31,14 +31,19 @@
             table.render({
                 elem: '#student',
                 url: '/students',
+                size: 'sm',
+                // skin: 'line',
                 cols:[[
+                    {align: 'left', title: '<span style="color:#0bcc3d">新家教信息</span>',colspan: 5,color:'#5FB878'}
+                ],
+                    [
                     {field:'grade',width:120, title: '年级',templet: function(d){
                             return d.grade.grade
                         }
                     },
                     {field:'sex', width:120, title: '性别'
                     },
-                    {field:'subjject', width:150, title: '求教科目'},
+                    {field:'subject', width:150, title: '求教科目'},
                     {field:'area', width:150, title: '授课区域',templet: function(d){
                             return d.area.area
                         }

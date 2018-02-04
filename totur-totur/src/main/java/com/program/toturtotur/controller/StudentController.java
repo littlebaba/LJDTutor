@@ -5,8 +5,12 @@ import com.program.toturtotur.service.StudentService;
 import com.program.tutorcommon.base.BaseController;
 import com.program.tutorcommon.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author Li on 2018/2/2.
@@ -29,7 +33,10 @@ public class StudentController extends BaseController{
         layUIPageBean.setCode(0);
         layUIPageBean.setCount(studentService.getCount());
         layUIPageBean.setMsg("查询成功1");
-        layUIPageBean.setData(studentService.findAll());
+        Sort sort = new Sort(Sort.Direction.DESC,"initDate");
+        Page<Student> pStudents = studentService.fetchTopTen(sort);
+        List<Student> topTenS = pStudents.getContent();
+        layUIPageBean.setData(topTenS);
         return layUIPageBean;
 
     }
