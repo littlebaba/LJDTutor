@@ -23,13 +23,8 @@ public class StudentController extends BaseController{
     private StudentService studentService;
 
     @GetMapping
-    public LayUIPageBean getStudents(
-//            @RequestParam(required = false, defaultValue = "1")int page,
-//            @RequestParam(required = false, defaultValue = "10")int limit
-    ){
+    public LayUIPageBean getStudents(){
         LayUIPageBean<Student> layUIPageBean = new LayUIPageBean<Student>();
-//        layUIPageBean.setPage(page);
-//        layUIPageBean.setLimit(limit);
         layUIPageBean.setCode(0);
         layUIPageBean.setCount(studentService.getCount());
         layUIPageBean.setMsg("查询成功1");
@@ -38,7 +33,6 @@ public class StudentController extends BaseController{
         List<Student> topTenS = pStudents.getContent();
         layUIPageBean.setData(topTenS);
         return layUIPageBean;
-
     }
 
 

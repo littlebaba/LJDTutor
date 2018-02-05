@@ -19,5 +19,8 @@ public class PageController {
         return "index";
     }
 
-
+    @RequestMapping(value = "/studentsPage")
+    public String StudentsPage(){
+        return "student/students";
+    }
 }

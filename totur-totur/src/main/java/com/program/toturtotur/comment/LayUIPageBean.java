@@ -8,12 +8,10 @@ import java.util.List;
 /**
  * @author Li on 2018/2/2.
  */
-public class LayUIPageBean<T> implements Serializable{
-    private int code ;
+public class LayUIPageBean<T> implements Serializable {
+    private int code;
     private String msg;
     private long count;
-//    private Integer page;
-//    private Integer limit;
     private List<T> data;
 
     public int getCode() {
@@ -54,8 +52,6 @@ public class LayUIPageBean<T> implements Serializable{
                 "code=" + code +
                 ", msg='" + msg + '\'' +
                 ", count=" + count +
-//                ", page=" + page +
-//                ", limit=" + limit +
                 ", data=" + data +
                 '}';
     }

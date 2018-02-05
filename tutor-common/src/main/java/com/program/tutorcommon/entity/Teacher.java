@@ -79,6 +79,9 @@ public class Teacher implements Serializable {
     @ManyToMany(mappedBy = "teachers")
     private Set<Student> students = new HashSet<Student>();
 
+
+    private String selfDes;
+
     public Integer getId() {
         return id;
     }

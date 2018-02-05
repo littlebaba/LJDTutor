@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
-    <link rel="stylesheet" th:href="@{/css/layui.css}"/>
-
-</head>
+<head th:include="common/common"></head>
 <body>
 
-    <ul class="layui-nav layui-bg-molv" lay-filter="">
-        <li class="layui-nav-item layui-this"><a href="">首页</a></li>
-        <li class="layui-nav-item"><a href="">请老师</a></li>
-        <li class="layui-nav-item"><a href="">做老师</a></li>
-        <li class="layui-nav-item"><a href="">教员库</a></li>
-        <li class="layui-nav-item"><a href="">学员库</a></li>
-    </ul>
+    <div th:include="common/nav :: nav"></div>
 
     <div class="layui-container">
         <div class="layui-row">
             <div class="layui-col-xs12 layui-col-md8">
                 <table id="student" class="layui-table"></table>
+                <table id="teacher" class="layui-table"></table>
             </div>
         </div>
     </div>
@@ -32,7 +21,7 @@
                 elem: '#student',
                 url: '/students',
                 size: 'sm',
-                // skin: 'line',
+                skin: 'line',
                 cols:[[
                     {align: 'left', title: '<span style="color:#0bcc3d">新家教信息</span>',colspan: 5,color:'#5FB878'}
                 ],
@@ -52,6 +41,25 @@
                 ]]
             });
 
+            table.render({
+                elem: '#teacher',
+                url: '/teachers',
+                size: 'sm',
+                skin: 'line',
+                cols:[[
+                    {align: 'left', title: '<span style="color:#0bcc3d">教员信息</span>',colspan: 5,color:'#5FB878'}
+                ],
+                    [
+                        {field:'name',width:120, title: '姓名'
+                        },
+                        {field:'graduatedSchool', width:120, title: '毕业学校'
+                        },
+                        {field:'subject', width:150, title: '专业'},
+                        {field:'contactAddr', width:150, title: '自我简介'
+                        },
+                        {field:'initDate',title: '更新时间'}
+                    ]]
+            });
 
         });
 
