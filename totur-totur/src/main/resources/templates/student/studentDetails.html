@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/common"></head>
+<body>
+    <div th:include="common/nav :: nav"></div>
+
+    <div class="layui-container">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                <legend><span th:value="${bean.data.get(0).id}">号家教详情</span></legend>
+            </fieldset>
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">编  号</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="phone" th:value="${bean.data.get(0).id}"  class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">联系人</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).contactName}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">求教科目</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).subject}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">学生年级</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="phone" th:value="${bean.data.get(0).grade.grade}"  class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">学员性别</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).sex eq 0 ? '男':'女'}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">所在区域</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).getArea().area}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">授课地点</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).areaDes}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">时间安排</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="phone" th:value="${bean.data.get(0).classTime}"  class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">对教员性别要求</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).reqTeaSex gt 1 ? '男女均可':(bean.data.get(0).reqTeaSex eq 0?'男':'女')}" class="layui-input" disabled>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">薪资待遇</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).pay}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">家教状态</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="phone" th:value="${bean.data.get(0).state eq 2?'已经签约':(bean.data.get(0).state eq 0?'新家教':'正在试讲')}"  class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">发布时间</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).initDate}" class="layui-input" disabled>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item" >
+                        <label class="layui-form-label">学员状况</label>
+                        <div class="layui-input-block" style="width: 840px">
+                            <input type="text" name="identity" th:value="${bean.data.get(0).studentDes}" class="layui-input" disabled>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item" >
+                        <label class="layui-form-label">对教员要求</label>
+                        <div class="layui-input-block" style="width: 840px">
+                            <input type="text" name="identity" th:value="${bean.data.get(0).reqTeaDes}" class="layui-input" disabled>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="layui-row">
+            <div class="layui-col-md12">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">预约人数</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" th:value="${bean.data.get(0).pay}" class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">联系电话</label>
+                            <div class="layui-input-inline">
+                                <input type="tel" name="phone" th:value="${bean.data.get(0).mobilePhone}"  class="layui-input" disabled>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit="" lay-filter="demo1">立即预约</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+    <script th:src="@{/js/layui.all.js}"></script>
+</body>
+</html>

@@ -8,14 +8,18 @@
     <div class="layui-container">
         <div class="layui-row">
             <div class="layui-col-xs12 layui-col-md8">
-                <table id="student" class="layui-table"></table>
-                <table id="teacher" class="layui-table"></table>
+                <table id="student" class="layui-table" lay-filter="stu"></table>
+                <table id="teacher" class="layui-table" lay-filter="tea"></table>
             </div>
         </div>
     </div>
+    <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
     <script th:src="@{/js/layui.all.js}"></script>
+    <script type="text/html" id="barDem">
+        <a class="layui-btn layui-btn-xs" lay-event="details">查看详细</a>
+    </script>
     <script>
-        layui.use('table', function () {
+        layui.use(['layer','table'], function () {
             var table = layui.table;
             table.render({
                 elem: '#student',
@@ -23,23 +27,37 @@
                 size: 'sm',
                 skin: 'line',
                 cols:[[
-                    {align: 'left', title: '<span style="color:#0bcc3d">新家教信息</span>',colspan: 5,color:'#5FB878'}
+                    {align: 'left', title: '<span style="color:#0bcc3d">学生信息</span>',colspan: 6,color:'#5FB878'}
                 ],
                     [
                     {field:'grade',width:120, title: '年级',templet: function(d){
                             return d.grade.grade
                         }
                     },
-                    {field:'sex', width:120, title: '性别'
+                    {field:'sex', width:70, title: '性别',templet: function(d){
+                            var sexStr;
+                            (d.sex == 0)? sexStr='男':sexStr='女';
+                            return sexStr;
+                        }
                     },
-                    {field:'subject', width:150, title: '求教科目'},
+                    {field:'subject', width:120, title: '求教科目'},
                     {field:'area', width:150, title: '授课区域',templet: function(d){
                             return d.area.area
                         }
                     },
-                    {field:'initDate',title: '更新时间'}
+                    {field:'initDate',title: '更新时间'},
+                    {fixed: 'right', width:150, align:'center', toolbar: '#barDem'}
                 ]]
             });
+
+            table.on('tool(stu)',function (obj) {
+                var data = obj.data;
+                var layEvent = obj.event;
+                if (layEvent === 'details'){
+                    window.location.href="/studentDetailsPage?id="+data.id
+                }
+            });
+
 
             table.render({
                 elem: '#teacher',
@@ -64,7 +82,5 @@
         });
 
     </script>
-
-
 </body>
 </html>

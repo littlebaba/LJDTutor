@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/common">
+    <link rel="stylesheet" href="/css/layui.css" />
+</head>
+<body>
+<div th:include="common/nav :: nav"></div>
+<!--<script th:src="@{/js/layui.all.js}"></script>-->
+<script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+<script th:src="@{/js/lay/modules/layer.js}"></script>
+<script>
+    // layui.use('layer', function(){
+    //     var layer = layui.layer;
+    //
+    //
+    // });
+    layer.msg('只想弱弱提示');
+    // layer.open({
+    //     type: 1,
+    //     content: '传入任意的文本或html' //这里content是一个普通的String
+    // });
+
+</script>
+<h1>学生</h1>
+</body>
+</html>

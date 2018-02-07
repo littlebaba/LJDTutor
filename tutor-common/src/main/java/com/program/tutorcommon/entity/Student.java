@@ -62,7 +62,7 @@ public class Student implements Serializable {
     private Set<Teacher> teachers = new HashSet<Teacher>();
 
 
-    private Integer reqTeaSex = 2;////0:男 1：女 2：男女均可
+    private Integer reqTeaSex = 2;//0:男 1：女 2：男女均可
 
     private String reqTeaDes;
 
@@ -73,6 +73,27 @@ public class Student implements Serializable {
     @Column(nullable = false)
     @JsonFormat(pattern = Constants.DATETIME_FORMAT, timezone = "GMT+8")
     private Date initDate;
+
+    @Column(columnDefinition = "default 0")
+    private Integer state;//0:新家教1：正在试讲2：已经签约
+
+    private String subject;
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
+    }
 
 
 

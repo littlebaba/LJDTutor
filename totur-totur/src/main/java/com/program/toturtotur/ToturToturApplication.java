@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 @SpringBootApplication
-@EnableCaching//缓存支持
+//@EnableCaching//缓存支持
 public class ToturToturApplication {
 
 	public static void main(String[] args) throws IOException {
