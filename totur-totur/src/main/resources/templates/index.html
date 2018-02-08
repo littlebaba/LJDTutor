@@ -15,7 +15,10 @@
     </div>
     <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
     <script th:src="@{/js/layui.all.js}"></script>
-    <script type="text/html" id="barDem">
+    <script type="text/html" id="barStudent">
+        <a class="layui-btn layui-btn-xs" lay-event="details">查看详细</a>
+    </script>
+    <script type="text/html" id="barTeacher">
         <a class="layui-btn layui-btn-xs" lay-event="details">查看详细</a>
     </script>
     <script>
@@ -26,27 +29,45 @@
                 url: '/students',
                 size: 'sm',
                 skin: 'line',
+                cellMinWidth: 70,
                 cols:[[
                     {align: 'left', title: '<span style="color:#0bcc3d">学生信息</span>',colspan: 6,color:'#5FB878'}
                 ],
                     [
-                    {field:'grade',width:120, title: '年级',templet: function(d){
+                    {field:'grade', width:70,title: '年级',templet: function(d){
                             return d.grade.grade
                         }
                     },
-                    {field:'sex', width:70, title: '性别',templet: function(d){
+                    {field:'sex', width:70, title: '性别',align: 'center',templet: function(d){
                             var sexStr;
                             (d.sex == 0)? sexStr='男':sexStr='女';
                             return sexStr;
                         }
                     },
-                    {field:'subject', width:120, title: '求教科目'},
-                    {field:'area', width:150, title: '授课区域',templet: function(d){
+                    {field:'subject', title: '求教科目'},
+                    {field:'area', title: '授课区域',templet: function(d){
                             return d.area.area
                         }
                     },
-                    {field:'initDate',title: '更新时间'},
-                    {fixed: 'right', width:150, align:'center', toolbar: '#barDem'}
+                    {field:'initDate',title: '更新时间',align: 'center',templet: function(d){
+                            var sp = d.initDate.split(" ");
+                            var spDay;
+                            spDay =sp[0].split("-")[2];
+                            var nowStr = new Date(Date.now()); //2018/2/8 下午9:38:06
+                            nowStr = nowStr.toLocaleString()
+                            console.info(nowStr);
+                            var nowSp = nowStr.split(" ");
+                            var nowDay = nowSp[0].split("/")[2];
+                            if (parseInt(spDay)-parseInt(nowDay) === 0){
+                                return '<span style="color: #ff1b11;">'+' 今天'+'</span>'
+                            }else if(parseInt(spDay)-parseInt(nowDay) === -1){
+                                return '<span style="color: #ffa139;">'+' 昨天'+'</span>'
+                            }else{
+                                return sp[0];
+                            }
+                        }
+                    },
+                    {fixed: 'right', align:'center', toolbar: '#barStudent'}
                 ]]
             });
 
@@ -64,23 +85,41 @@
                 url: '/teachers',
                 size: 'sm',
                 skin: 'line',
+                cellMinWidth: 80,
                 cols:[[
-                    {align: 'left', title: '<span style="color:#0bcc3d">教员信息</span>',colspan: 5,color:'#5FB878'}
+                    {align: 'left', title: '<span style="color:#0bcc3d">教员信息</span>',colspan: 6,color:'#5FB878'}
                 ],
                     [
-                        {field:'name',width:120, title: '姓名'
+                        {field:'name', title: '姓名'
                         },
-                        {field:'graduatedSchool', width:120, title: '毕业学校'
+                        {field:'graduatedSchool', title: '毕业学校'
                         },
-                        {field:'subject', width:150, title: '专业'},
-                        {field:'contactAddr', width:150, title: '自我简介'
+                        {field:'profession', title: '专业'},
+                        {field:'contactAddr', width:150,title: '自我简介'
                         },
-                        {field:'initDate',title: '更新时间'}
+                        {field:'initDate',title: '更新时间'},
+                        {fixed: 'right', align:'center', toolbar: '#barTeacher'}
                     ]]
             });
 
         });
-
+        var dateFun = function(d){
+            var sp = d.initDate.split(" ");
+            var spDay;
+            spDay =sp[0].split("-")[2];
+            var nowStr = new Date(Date.now()); //2018/2/8 下午9:38:06
+            nowStr = nowStr.toLocaleString()
+            console.info(nowStr);
+            var nowSp = nowStr.split(" ");
+            var nowDay = nowSp[0].split("/")[2];
+            if (parseInt(spDay)-parseInt(nowDay) === 0){
+                return "今天"
+            }else if(parseInt(spDay)-parseInt(nowDay) === -1){
+                return "昨天"
+            }else{
+                return sp[0];
+            }
+        }
     </script>
 </body>
 </html>

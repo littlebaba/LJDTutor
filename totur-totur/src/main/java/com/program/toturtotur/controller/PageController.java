@@ -28,7 +28,7 @@ public class PageController {
     @Autowired
     private StudentService studentService;
 
-    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    @RequestMapping(value = "/home",method = RequestMethod.GET)
     public String index(){
         return "index";
     }
@@ -50,7 +50,6 @@ public class PageController {
         layUIPageBean.setData(students);
         model.addAttribute("bean",layUIPageBean);
         return "student/studentDetails";
-
     }
 
 }

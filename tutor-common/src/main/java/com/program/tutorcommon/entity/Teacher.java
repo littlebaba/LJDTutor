@@ -82,6 +82,14 @@ public class Teacher implements Serializable {
 
     private String selfDes;
 
+    public String getSelfDes() {
+        return selfDes;
+    }
+
+    public void setSelfDes(String selfDes) {
+        this.selfDes = selfDes;
+    }
+
     public Integer getId() {
         return id;
     }

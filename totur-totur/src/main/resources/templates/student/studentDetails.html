@@ -6,7 +6,7 @@
 
     <div class="layui-container">
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-                <legend><span th:value="${bean.data.get(0).id}">号家教详情</span></legend>
+                <legend th:text="${bean.data.get(0).id+'号家教信息'}"></legend>
             </fieldset>
         <div class="layui-row">
             <div class="layui-col-md12">
@@ -149,7 +149,7 @@
                         <div class="layui-inline">
                             <label class="layui-form-label">预约人数</label>
                             <div class="layui-input-inline">
-                                <input type="text" name="email" th:value="${bean.data.get(0).pay}" class="layui-input" disabled>
+                                <input type="text" name="email" th:value="${bean.data.get(0).getTeachers().size()}" class="layui-input" disabled>
                             </div>
                         </div>
                         <div class="layui-inline">

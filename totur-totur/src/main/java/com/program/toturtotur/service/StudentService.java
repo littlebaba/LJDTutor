@@ -14,5 +14,4 @@ import java.util.List;
 public interface StudentService extends BaseService<Student>{
 
     Page<Student> fetchTopTen(Sort sort);
-
 }
