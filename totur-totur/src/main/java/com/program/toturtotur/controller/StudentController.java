@@ -35,7 +35,6 @@ public class StudentController extends BaseController{
         layUIPageBean.setData(topTenS);
         return layUIPageBean;
     }
-
 }
 
 
