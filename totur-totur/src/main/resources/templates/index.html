@@ -8,13 +8,15 @@
     <div class="layui-container">
         <div class="layui-row">
             <div class="layui-col-xs12 layui-col-md8">
-                <table id="student" class="layui-table" lay-filter="stu"></table>
-                <table id="teacher" class="layui-table" lay-filter="tea"></table>
+                <table id="student" class="layui-table student" lay-filter="stu"></table>
+                <table id="teacher" class="layui-table teacher" lay-filter="tea"></table>
             </div>
         </div>
     </div>
+    <div th:include="common/foot :: foot"></div>
     <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
     <script th:src="@{/js/layui.all.js}"></script>
+    <script type="text/javascript" charset="utf-8" th:src="@{/js/utils.js}"></script>
     <script type="text/html" id="barStudent">
         <a class="layui-btn layui-btn-xs" lay-event="details">查看详细</a>
     </script>
@@ -31,7 +33,7 @@
                 skin: 'line',
                 cellMinWidth: 70,
                 cols:[[
-                    {align: 'left', title: '<span style="color:#0bcc3d">学生信息</span>',colspan: 6,color:'#5FB878'}
+                    {align: 'left',title: '学生信息',colspan: 6,}
                 ],
                     [
                     {field:'grade', width:70,title: '年级',templet: function(d){
@@ -50,21 +52,7 @@
                         }
                     },
                     {field:'initDate',title: '更新时间',align: 'center',templet: function(d){
-                            var sp = d.initDate.split(" ");
-                            var spDay;
-                            spDay =sp[0].split("-")[2];
-                            var nowStr = new Date(Date.now()); //2018/2/8 下午9:38:06
-                            nowStr = nowStr.toLocaleString()
-                            console.info(nowStr);
-                            var nowSp = nowStr.split(" ");
-                            var nowDay = nowSp[0].split("/")[2];
-                            if (parseInt(spDay)-parseInt(nowDay) === 0){
-                                return '<span style="color: #ff1b11;">'+' 今天'+'</span>'
-                            }else if(parseInt(spDay)-parseInt(nowDay) === -1){
-                                return '<span style="color: #ffa139;">'+' 昨天'+'</span>'
-                            }else{
-                                return sp[0];
-                            }
+                            return dateFun(d);
                         }
                     },
                     {fixed: 'right', align:'center', toolbar: '#barStudent'}
@@ -87,7 +75,7 @@
                 skin: 'line',
                 cellMinWidth: 80,
                 cols:[[
-                    {align: 'left', title: '<span style="color:#0bcc3d">教员信息</span>',colspan: 6,color:'#5FB878'}
+                    {align: 'left', title: '教员信息',colspan: 6,color:'#5FB878'}
                 ],
                     [
                         {field:'name', title: '姓名'
@@ -97,29 +85,28 @@
                         {field:'profession', title: '专业'},
                         {field:'contactAddr', width:150,title: '自我简介'
                         },
-                        {field:'initDate',title: '更新时间'},
+                        {field:'initDate',title: '更新时间',align: 'center',templet: function(d){
+                                return dateFun(d);
+                            }
+                        },
                         {fixed: 'right', align:'center', toolbar: '#barTeacher'}
                     ]]
             });
 
+            table.on('tool(tea)',function (obj) {
+                var data = obj.data;
+                var layEvent = obj.event;
+                if (layEvent === 'details'){
+                    window.location.href="/teacherDetailsPage?id="+data.id
+                }
+            });
+
         });
-        var dateFun = function(d){
-            var sp = d.initDate.split(" ");
-            var spDay;
-            spDay =sp[0].split("-")[2];
-            var nowStr = new Date(Date.now()); //2018/2/8 下午9:38:06
-            nowStr = nowStr.toLocaleString()
-            console.info(nowStr);
-            var nowSp = nowStr.split(" ");
-            var nowDay = nowSp[0].split("/")[2];
-            if (parseInt(spDay)-parseInt(nowDay) === 0){
-                return "今天"
-            }else if(parseInt(spDay)-parseInt(nowDay) === -1){
-                return "昨天"
-            }else{
-                return sp[0];
-            }
-        }
+        $("table tr:first-child").css({
+            background: "none",
+            backgroundColor: "#0ba936",
+            color:"#ffffff"
+        });
     </script>
 </body>
 </html>

@@ -2,7 +2,9 @@ package com.program.toturtotur.controller;
 
 import com.program.toturtotur.comment.LayUIPageBean;
 import com.program.toturtotur.service.StudentService;
+import com.program.toturtotur.service.TeacherService;
 import com.program.tutorcommon.entity.Student;
+import com.program.tutorcommon.entity.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,6 +30,9 @@ public class PageController {
     @Autowired
     private StudentService studentService;
 
+    @Autowired
+    private TeacherService teacherService;
+
     @RequestMapping(value = "/home",method = RequestMethod.GET)
     public String index(){
         return "index";
@@ -44,12 +49,26 @@ public class PageController {
         layUIPageBean.setCode(0);
         layUIPageBean.setCount(studentService.getCount());
         layUIPageBean.setMsg("查询成功1");
-        Student pStudents = studentService.findOne(id);
+        Student pStudent = studentService.findOne(id);
         List<Student> students = new ArrayList<>();
-        students.add(pStudents);
+        students.add(pStudent);
         layUIPageBean.setData(students);
         model.addAttribute("bean",layUIPageBean);
         return "student/studentDetails";
+    }
+
+    @RequestMapping(value = "/teacherDetailsPage")
+    public String teachersDetialPage(@RequestParam(value = "id") Integer id,Model model){
+        LayUIPageBean<Teacher> layUIPageBean = new LayUIPageBean<Teacher>();
+        layUIPageBean.setCode(0);
+        layUIPageBean.setCount(teacherService.getCount());
+        layUIPageBean.setMsg("查询成功2");
+        Teacher pTeacher = teacherService.findOne(id);
+        List<Teacher> teachers = new ArrayList<>();
+        teachers.add(pTeacher);
+        layUIPageBean.setData(teachers);
+        model.addAttribute("beanTea",layUIPageBean);
+        return "teacher/teacherDetails";
     }
 
 }

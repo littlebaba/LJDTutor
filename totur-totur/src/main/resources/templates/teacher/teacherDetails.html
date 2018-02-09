@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/common"></head>
+<body>
+    <div th:include="common/nav :: nav"></div>
+    <!--<h1 th:text="${beanTea.data.get(0).id}"></h1>-->
+    <div class="layui-container">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend th:text="${beanTea.data.get(0).id+'号家教老师简历'}"></legend>
+        </fieldset>
+
+    </div>
+</body>
+</html>

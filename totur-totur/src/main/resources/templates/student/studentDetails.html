@@ -3,11 +3,10 @@
 <head th:include="common/common"></head>
 <body>
     <div th:include="common/nav :: nav"></div>
-
     <div class="layui-container">
-            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-                <legend th:text="${bean.data.get(0).id+'号家教信息'}"></legend>
-            </fieldset>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend th:text="${bean.data.get(0).id+'号家教信息'}"></legend>
+        </fieldset>
         <div class="layui-row">
             <div class="layui-col-md12">
                 <form class="layui-form" action="">
@@ -169,8 +168,45 @@
             </div>
         </div>
 
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-md12">
+                <table id="teaSelectThis" class="layui-table" lay-filter="teaSelectThis">
+                    <thead>
+                        <tr>
+                            <th colspan=4 style="text-align: center">已预约（应聘）此家教的老师列表</th>
+                        </tr>
+                        <tr>
+                            <th>教师编号</th>
+                            <th>姓名</th>
+                            <th>就读、毕业学校、专业、目前身份</th>
+                            <th>预约(应聘)时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:remove="${bean.data.get(0).getTeachers().size() eq 0}? none : all">
+                            <th colspan=4 style="text-align: center">暂时没有教员接单，有把握的老师先预约吧！</th>
+                        </tr>
+                        <tr th:each="tea:${bean.data.get(0).getTeachers()}" th:remove="${bean.data.get(0).getTeachers().size() eq 0}? all : none">
+                           <td th:text="${tea.id}"></td>
+                           <td th:text="${tea.name.split('')[0]}+'老师'"></td>
+                           <td th:text="${tea.graduatedSchool+'、'+tea.profession+'、'+tea.education}"></td>
+                           <td th:text="${tea.initDate}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+    <div th:include="common/foot :: foot"></div>
     <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
     <script th:src="@{/js/layui.all.js}"></script>
+    <script>
+        $("table tr:first").css({
+            background: "none",
+            backgroundColor: "#0ba936",
+            color:"#ffffff"
+        });
+    </script>
+
 </body>
 </html>
