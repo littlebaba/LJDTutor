@@ -44,6 +44,19 @@ public class Teacher implements Serializable {
     @JsonFormat(pattern = Constants.DATETIME_FORMAT, timezone = "GMT+8")
     private Date initDate;
 
+
+    @ManyToOne
+    @JoinColumn(nullable = false,name = "area_id")
+    private Area area;
+
+    public Area getArea() {
+        return area;
+    }
+
+    public void setArea(Area area) {
+        this.area = area;
+    }
+
     private String birthPlace;
 
 
@@ -80,7 +93,37 @@ public class Teacher implements Serializable {
     private Set<Student> students = new HashSet<Student>();
 
 
+
     private String selfDes;
+    private String teachSubjects;
+
+    private String canTeachTime;
+
+    private String salaryRequire;
+
+    public String getSalaryRequire() {
+        return salaryRequire;
+    }
+
+    public void setSalaryRequire(String salaryRequire) {
+        this.salaryRequire = salaryRequire;
+    }
+
+    public String getTeachSubjects() {
+        return teachSubjects;
+    }
+
+    public void setTeachSubjects(String teachSubjects) {
+        this.teachSubjects = teachSubjects;
+    }
+
+    public String getCanTeachTime() {
+        return canTeachTime;
+    }
+
+    public void setCanTeachTime(String canTeachTime) {
+        this.canTeachTime = canTeachTime;
+    }
 
     public String getSelfDes() {
         return selfDes;

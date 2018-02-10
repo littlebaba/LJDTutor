@@ -3,12 +3,150 @@
 <head th:include="common/common"></head>
 <body>
     <div th:include="common/nav :: nav"></div>
-    <!--<h1 th:text="${beanTea.data.get(0).id}"></h1>-->
     <div class="layui-container">
         <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
             <legend th:text="${beanTea.data.get(0).id+'号家教老师简历'}"></legend>
         </fieldset>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">教员编号</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).id}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">教员称呼</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).name}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">出生年月</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).birthday.toString().split(' ')[0]}"  class="layui-input" disabled>
+                </div>
+            </div>
+        </div>
 
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">籍贯</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).birthPlace}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">最高学历</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).education}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">所在区域</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).getLivePlace()}"  class="layui-input" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">就读院校</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).getGraduatedSchool()}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">所学专业</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).getProfession()}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">家教辅导方式</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="'教员上门'"  class="layui-input" disabled>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">可授课区域</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).getArea().area}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">可授课时间</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).getCanTeachTime()}"  class="layui-input" disabled>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">薪水要求</label>
+                <div class="layui-input-inline">
+                    <input type="tel" name="phone" th:value="${beanTea.data.get(0).getSalaryRequire()}"  class="layui-input" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">可教授科目</label>
+            <div class="layui-input-block" style="width: 840px">
+                <input type="tel" name="phone" th:value="${beanTea.data.get(0).getTeachSubjects()}"  class="layui-input" disabled>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">个人特别说明</label>
+            <div class="layui-input-inline" style="width: 735px">
+                <input type="tel" name="phone" th:value="${beanTea.data.get(0).getSelfDes()}"  class="layui-input" disabled>
+            </div>
+            <div class="layui-input-inline">
+                <button class="layui-btn" lay-submit="" lay-filter="demo1">立即预约</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="layui-form-item">
+            <table id="stuSelectThis" class="layui-table" lay-filter="stuSelectThis">
+                <thead>
+                <tr>
+                    <th colspan=4 style="text-align: center">已预约（应聘）此家教的老师列表</th>
+                </tr>
+                <tr>
+                    <th>教师编号</th>
+                    <th>年级.性别</th>
+                    <th>家庭住址</th>
+                    <th>发布日期</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:remove="${beanTea.data.get(0).getStudents().size() eq 0}? none : all">
+                    <th colspan=4 style="text-align: center">觉得老师可以就快点预约吧！</th>
+                </tr>
+                <tr th:each="stu:${beanTea.data.get(0).getStudents()}" th:remove="${beanTea.data.get(0).getStudents().size() eq 0}? all : none">
+                    <td th:text="${stu.id}"></td>
+                    <td th:text="${stu.grade.grade}+'.'+${stu.sex eq 0 ? '男':'女'}"></td>
+                    <td th:text="${stu.areaDes}"></td>
+                    <td th:text="${stu.initDate}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</body>
+
+
+    <div th:include="common/foot :: foot"></div>
+    <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+    <script th:src="@{/js/layui.all.js}"></script>
+    <script>
+        $("table tr:first").css({
+            background: "none",
+            backgroundColor: "#0ba936",
+            color:"#ffffff"
+        });
+    </script>
+    </body>
 </html>

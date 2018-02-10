@@ -71,4 +71,15 @@ public class PageController {
         return "teacher/teacherDetails";
     }
 
+    @RequestMapping(value = "/stuRegPage")
+    public String stuRegPage(){
+        return "student/stuReg";
+    }
+
+    //teachRegPage
+    @RequestMapping(value = "/teachRegPage")
+    public String teachRegPage(){
+        return "teacher/teachReg";
+
+    }
 }
