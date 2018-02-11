@@ -80,6 +80,5 @@ public class PageController {
     @RequestMapping(value = "/teachRegPage")
     public String teachRegPage(){
         return "teacher/teachReg";
-
     }
 }
