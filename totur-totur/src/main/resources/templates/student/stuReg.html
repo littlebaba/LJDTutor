@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:include="common/common"></head>
+<head th:include="common/common">
+</head>
+
 <body>
     <div th:include="common/nav :: nav"></div>
     <div class="layui-container">
-        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <fieldset class="layui-elem-field layui-field-title">
             <legend>请家长（学员）登记请老师信息</legend>
         </fieldset>
         <form class="layui-form layui-form-pane" action="">
@@ -36,9 +38,129 @@
                 </div>
             </div>
 
+            <div class="layui-form-item">
+                <label class="layui-form-label">授课地址</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="" title="dd">
+                        <option value="">请选择一个城市</option>
+                        <option value="010">北京</option>
+                        <option value="021">上海</option>
+                        <option value="0571">杭州</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                </div>
+            </div>
 
+            <div class="layui-form-item">
+                <label class="layui-form-label">学员性别</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="" title="dd">
+                        <option value="010">男</option>
+                        <option value="011">女</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">要辅导的科目</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item layui-form-text" >
+                <div class="layui-form-label" style="width: 450px">文本域</div>
+                <div class="layui-input-block" style="width: 450px">
+                    <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">一周上</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="" title="dd1">
+                        <option value="010">1次课</option>
+                        <option value="011">2次课</option>
+                        <option value="012">3次课</option>
+                        <option value="013">4次课</option>
+                        <option value="014">5次课</option>
+                        <option value="015">6次课</option>
+                        <option value="016">7次课</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">每次</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="" title="dd2">
+                        <option value="010">2小时</option>
+                        <option value="011">2.5小时</option>
+                        <option value="012">3小时</option>
+                        <option value="013">4小时</option>
+                        <option value="014">5小时</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">具体上课安排</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">对老师的要求</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="" title="dd">
+                        <option value="010">男女不限</option>
+                        <option value="011">男</option>
+                        <option value="012">女</option>
+                    </select>
+                </div>
+                <div  style="width: 450px">
+                    <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">付给老师报酬</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-verify="" title="dd">
+                        <option value="010">面议</option>
+                        <option value="011">30/小时</option>
+                        <option value="012">35/小时</option>
+                        <option value="013">40/小时</option>
+                        <option value="014">45/小时</option>
+                        <option value="015">50/小时</option>
+                        <option value="016">55/小时</option>
+                        <option value="017">60/小时</option>
+                        <option value="018">65/小时</option>
+                        <option value="019">70/小时</option>
+                        <option value="020">75/小时</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item" >
+                <button style="width: 300px;margin-left: 70px" class="layui-btn" lay-submit="" lay-filter="demo2">立刻提交</button>
+            </div>
         </form>
     </div>
-    <div th:include="common/foot :: foot"></div>
+    <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+    <script th:src="@{/js/layui.all.js}"></script>
+    <script>
+        $("label").css({
+            width:"150"
+        });
+        $(".layui-input-inline").css({
+            width:"300"
+        });
+
+    </script>
 </body>
 </html>
