@@ -3,8 +3,10 @@ package com.program.toturtotur.controller;
 import com.program.toturtotur.comment.LayUIPageBean;
 import com.program.toturtotur.service.StudentService;
 import com.program.toturtotur.service.TeacherService;
+import com.program.toturtotur.service.UserService;
 import com.program.tutorcommon.entity.Student;
 import com.program.tutorcommon.entity.Teacher;
+import com.program.tutorcommon.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +35,9 @@ public class PageController {
 
     @Autowired
     private TeacherService teacherService;
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value = "/home",method = RequestMethod.GET)
     public String index(){
@@ -80,6 +86,23 @@ public class PageController {
     @RequestMapping(value = "/teachRegPage")
     public String teachRegPage(){
         return "teacher/teachReg";
+    }
+
+    @RequestMapping(value = "/stuReg",method = RequestMethod.POST)
+    public String stuReg(HttpServletRequest request,Student stu,Model model){
+        Student s = studentService.save(stu);
+        return "redirect:/home";
+    }
+
+    @RequestMapping(value = "/teachRegOne",method = RequestMethod.POST)
+    public String teachRegOne(HttpServletRequest request, User user,Model model){
+        User u = userService.save(user);
+        return "redirect:/teachRegTwo";
+    }
+
+    @RequestMapping(value = "/teachRegTwo")
+    public String teachRegTwo(){
+        return "teacher/teachRegTwo";
     }
 
 }

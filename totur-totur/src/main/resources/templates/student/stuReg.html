@@ -9,56 +9,54 @@
         <fieldset class="layui-elem-field layui-field-title">
             <legend>请家长（学员）登记请老师信息</legend>
         </fieldset>
-        <form class="layui-form layui-form-pane" action="">
+        <form class="layui-form layui-form-pane" th:action="@{/stuReg}" method="post">
             <div class="layui-form-item">
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                    <input type="text" name="contactName" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">年级</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="grade" value="1" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">联系电话</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-form-item">
-                <label class="layui-form-label">联系电话</label>
-                <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                    <input type="text" name="mobilePhone" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">QQ</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                    <input type="text" name="qq" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">授课地址</label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="" title="dd">
-                        <option value="">请选择一个城市</option>
-                        <option value="010">北京</option>
-                        <option value="021">上海</option>
-                        <option value="0571">杭州</option>
+                    <select name="area" lay-verify="" title="dd">
+                        <option value="1">安宁区</option>
+                        <option value="2">城关区</option>
                     </select>
                 </div>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                    <input type="text" name="areaDes" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">学员性别</label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="" title="dd">
-                        <option value="010">男</option>
-                        <option value="011">女</option>
+                    <select name="sex" lay-verify="" title="dd">
+                        <option value="0">男</option>
+                        <option value="1">女</option>
                     </select>
                 </div>
             </div>
@@ -66,28 +64,28 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">要辅导的科目</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                    <input type="text" name="subject" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item layui-form-text" >
-                <div class="layui-form-label" style="width: 450px">文本域</div>
+                <div class="layui-form-label" style="width: 450px">学员学习情况</div>
                 <div class="layui-input-block" style="width: 450px">
-                    <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                    <textarea name="studentDes" placeholder="请输入内容" class="layui-textarea"></textarea>
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">一周上</label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="" title="dd1">
-                        <option value="010">1次课</option>
-                        <option value="011">2次课</option>
-                        <option value="012">3次课</option>
-                        <option value="013">4次课</option>
-                        <option value="014">5次课</option>
-                        <option value="015">6次课</option>
-                        <option value="016">7次课</option>
+                    <select name="timesPerWeek" lay-verify="" title="dd1">
+                        <option value="1">1次课</option>
+                        <option value="2">2次课</option>
+                        <option value="3">3次课</option>
+                        <option value="4">4次课</option>
+                        <option value="5">5次课</option>
+                        <option value="6">6次课</option>
+                        <option value="7">7次课</option>
                     </select>
                 </div>
             </div>
@@ -95,12 +93,12 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">每次</label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="" title="dd2">
-                        <option value="010">2小时</option>
-                        <option value="011">2.5小时</option>
-                        <option value="012">3小时</option>
-                        <option value="013">4小时</option>
-                        <option value="014">5小时</option>
+                    <select name="hoursPerTime" lay-verify="" title="dd2">
+                        <option value="1">2小时</option>
+                        <option value="2.2">2.5小时</option>
+                        <option value="3">3小时</option>
+                        <option value="4">4小时</option>
+                        <option value="5">5小时</option>
                     </select>
                 </div>
             </div>
@@ -109,28 +107,28 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">具体上课安排</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                    <input type="text" name="classArr" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">对老师的要求</label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="" title="dd">
+                    <select name="reqTeaSex" lay-verify="" title="dd">
                         <option value="010">男女不限</option>
                         <option value="011">男</option>
                         <option value="012">女</option>
                     </select>
                 </div>
                 <div  style="width: 450px">
-                    <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                    <textarea name="reqTeaDes" placeholder="请输入内容" class="layui-textarea"></textarea>
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">付给老师报酬</label>
                 <div class="layui-input-inline">
-                    <select name="city" lay-verify="" title="dd">
+                    <select name="pay" lay-verify="" title="dd">
                         <option value="010">面议</option>
                         <option value="011">30/小时</option>
                         <option value="012">35/小时</option>
@@ -145,7 +143,6 @@
                     </select>
                 </div>
             </div>
-
             <div class="layui-form-item" >
                 <button style="width: 300px;margin-left: 70px" class="layui-btn" lay-submit="" lay-filter="demo2">立刻提交</button>
             </div>
@@ -153,6 +150,7 @@
     </div>
     <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
     <script th:src="@{/js/layui.all.js}"></script>
+
     <script>
         $("label").css({
             width:"150"
@@ -160,7 +158,6 @@
         $(".layui-input-inline").css({
             width:"300"
         });
-
     </script>
 </body>
 </html>

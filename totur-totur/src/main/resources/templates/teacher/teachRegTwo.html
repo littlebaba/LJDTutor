@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/common"></head>
+<body>
+    <div th:include="common/nav :: nav"></div>
+        <div class="layui-container">
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>教员注册步骤：注册->基本信息->完成</legend>
+            </fieldset>
+            <form class="layui-form layui-form-pane" th:action="@{/teachRegOne}" method="post">
+
+                <div class="layui-form-item" >
+                    <button style="width: 200px;margin-left: 80px" class="layui-btn" lay-submit="" lay-filter="demo2">立即提交</button>
+                </div>
+            </form>
+        </div>
+    <div th:include="common/foot :: foot"></div>
+    <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+    <script th:src="@{/js/layui.all.js}"></script>
+
+    <script>
+        $("label").css({
+            width:"150"
+        });
+        $(".layui-input-inline").css({
+            width:"300"
+        });
+    </script>
+</body>
+</html>

@@ -3,6 +3,8 @@ package com.program.tutorcommon.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.program.tutorcommon.utils.Constants;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -33,8 +35,6 @@ public class Student implements Serializable {
     private String mobilePhone;
 
 
-    private String password;
-
     @ManyToOne
     @JoinColumn(nullable = false,name = "area_id")
     private Area area;
@@ -45,7 +45,7 @@ public class Student implements Serializable {
     private Integer sex = 0; //0:男 1：女
 
     @ManyToOne
-    @JoinColumn(nullable = false,name = "grade_id")
+    @JoinColumn(nullable = false,name = "grade_id",columnDefinition = "1")
     private Grade grade;
 
 
@@ -72,12 +72,53 @@ public class Student implements Serializable {
 
     @Column(nullable = false)
     @JsonFormat(pattern = Constants.DATETIME_FORMAT, timezone = "GMT+8")
-    private Date initDate;
+    @CreatedDate
+    private Date initDate = new Date();
 
     @Column(columnDefinition = "default 0")
     private Integer state;//0:新家教1：正在试讲2：已经签约
 
     private String subject;
+
+
+    private String qq;
+
+    private String timesPerWeek;
+    private String hoursPerTime;
+    //具体上课安排
+    private String classArr;
+
+    public String getClassArr() {
+        return classArr;
+    }
+
+    public void setClassArr(String classArr) {
+        this.classArr = classArr;
+    }
+
+    public String getTimesPerWeek() {
+        return timesPerWeek;
+    }
+
+    public void setTimesPerWeek(String timesPerWeek) {
+        this.timesPerWeek = timesPerWeek;
+    }
+
+    public String getHoursPerTime() {
+        return hoursPerTime;
+    }
+
+    public void setHoursPerTime(String hoursPerTime) {
+        this.hoursPerTime = hoursPerTime;
+    }
+
+    public String getQq() {
+        return qq;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq;
+    }
 
     public String getSubject() {
         return subject;
@@ -219,13 +260,7 @@ public class Student implements Serializable {
         this.teachers = teachers;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 
 

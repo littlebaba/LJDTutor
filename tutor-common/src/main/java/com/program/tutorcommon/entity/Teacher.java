@@ -21,13 +21,6 @@ public class Teacher implements Serializable {
     @GeneratedValue
     private Integer id;
 
-    //注册信息
-    @Column(nullable = false)
-    private String username;
-
-    @Column(nullable = false)
-    @JsonIgnore
-    private String password;
 
     //教员基本信息
     @Column(nullable = false)
@@ -141,21 +134,7 @@ public class Teacher implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public String getName() {
         return name;
@@ -297,8 +276,6 @@ public class Teacher implements Serializable {
     public String toString() {
         return "Teacher{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", sex=" + sex +
                 ", birthday=" + birthday +
