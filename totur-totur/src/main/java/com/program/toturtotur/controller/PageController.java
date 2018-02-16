@@ -105,5 +105,10 @@ public class PageController {
         return "teacher/teachRegTwo";
     }
 
+    @RequestMapping(value = "/teachReg",method = RequestMethod.POST)
+    public String teachReg(HttpServletRequest request,Teacher teach,Model model){
+        Teacher t = teacherService.save(teach);
+        return "redirect:/home";
+    }
 }
 

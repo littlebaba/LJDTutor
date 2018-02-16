@@ -3,6 +3,7 @@ package com.program.tutorcommon.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.program.tutorcommon.utils.Constants;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -31,11 +32,12 @@ public class Teacher implements Serializable {
 
     @Column(nullable = false)
     @JsonFormat(pattern = Constants.DATE_FORMAT, timezone = "GMT+8")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
 
     @Column(nullable = false)
     @JsonFormat(pattern = Constants.DATETIME_FORMAT, timezone = "GMT+8")
-    private Date initDate;
+    private Date initDate = new Date();
 
 
     @ManyToOne
@@ -62,6 +64,8 @@ public class Teacher implements Serializable {
 
     private String graduatedSchool;
 
+    private String goUniversityYear;
+
     //联系方式
     private String livePlace;
 
@@ -73,7 +77,6 @@ public class Teacher implements Serializable {
 
     private String QQ;
 
-    @Column(nullable = false)
     private String email;
 
     @Column(nullable = false)
@@ -93,6 +96,24 @@ public class Teacher implements Serializable {
     private String canTeachTime;
 
     private String salaryRequire;
+
+    private String teachMethods;
+
+    public String getTeachMethods() {
+        return teachMethods;
+    }
+
+    public void setTeachMethods(String teachMethods) {
+        this.teachMethods = teachMethods;
+    }
+
+    public String getGoUniversityYear() {
+        return goUniversityYear;
+    }
+
+    public void setGoUniversityYear(String goUniversityYear) {
+        this.goUniversityYear = goUniversityYear;
+    }
 
     public String getSalaryRequire() {
         return salaryRequire;
