@@ -5,22 +5,68 @@
 </head>
 <body>
 <div th:include="common/nav :: nav"></div>
-<!--<script th:src="@{/js/layui.all.js}"></script>-->
-<script th:src="@{/js/jquery-1.11.2.min.js}"></script>
-<script th:src="@{/js/lay/modules/layer.js}"></script>
-<script>
-    // layui.use('layer', function(){
-    //     var layer = layui.layer;
-    //
-    //
-    // });
-    layer.msg('只想弱弱提示');
-    // layer.open({
-    //     type: 1,
-    //     content: '传入任意的文本或html' //这里content是一个普通的String
-    // });
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-md8">
+            <table id="students" class="layui-table students" lay-filter="stus"></table>
+        </div>
+    </div>
+</div>
 
+<script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+<script th:src="@{/js/layui.all.js}"></script>
+<script type="text/javascript" charset="utf-8" th:src="@{/js/utils.js}"></script>
+<script>
+    layui.use(['layer','table'], function () {
+        var table = layui.table;
+        table.render({
+            elem: '#students',
+            url: '/students',
+            size: 'sm',
+            skin: 'line',
+            cellMinWidth: 70,
+            cols:[[
+                {align: 'left',title: '学生信息',colspan: 6,}
+            ],
+                [
+                    {field:'grade', width:70,title: '年级',templet: function(d){
+                            return d.grade.grade
+                        }
+                    },
+                    {field:'sex', width:70, title: '性别',align: 'center',templet: function(d){
+                            var sexStr;
+                            (d.sex == 0)? sexStr='男':sexStr='女';
+                            return sexStr;
+                        }
+                    },
+                    {field:'subject', title: '求教科目'},
+                    {field:'area', title: '授课区域',templet: function(d){
+                            return d.area.area
+                        }
+                    },
+                    {field:'initDate',title: '更新时间',align: 'center',templet: function(d){
+                            return dateFun(d);
+                        }
+                    }
+                    // {fixed: 'right', align:'center', toolbar: '#barStudent'}
+                ]],
+            page:true
+        });
+
+        // table.on('tool(stu)',function (obj) {
+        //     var data = obj.data;
+        //     var layEvent = obj.event;
+        //     if (layEvent === 'details'){
+        //         window.location.href="/studentDetailsPage?id="+data.id
+        //     }
+        // });
+    });
+    $("table tr:first-child").css({
+        background: "none",
+        backgroundColor: "#0ba936",
+        color:"#ffffff"
+    });
 </script>
-<h1>学生</h1>
+
 </body>
 </html>

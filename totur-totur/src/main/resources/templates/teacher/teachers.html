@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="common/common">
+    <link rel="stylesheet" href="/css/layui.css" />
+</head>
+<body>
+<div th:include="common/nav :: nav"></div>
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-md8">
+            <table id="teachers" class="layui-table teachers" lay-filter="teas"></table>
+        </div>
+    </div>
+</div>
+<script th:src="@{/js/layui.all.js}"></script>
+<script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+<script type="text/javascript" charset="utf-8" th:src="@{/js/utils.js}"></script>
+<script>
+    layui.use(['layer','table'], function () {
+        var table = layui.table;
+        table.render({
+            elem: '#teachers',
+            url: '/teachers',
+            size: 'sm',
+            skin: 'line',
+            cellMinWidth: 80,
+            cols:[[
+                {align: 'left', title: '教员信息',colspan: 6,color:'#5FB878'}
+            ],
+                [
+                    {field:'name', title: '姓名'
+                    },
+                    {field:'graduatedSchool', title: '毕业学校'
+                    },
+                    {field:'profession', title: '专业'},
+                    {field:'selfDes', width:150,title: '自我简介'
+                    },
+                    {field:'initDate',title: '更新时间',align: 'center',templet: function(d){
+                            return dateFun(d);
+                        }
+                    }
+                    // {fixed: 'right', align:'center', toolbar: '#barTeacher'}
+                ]],
+            page:true
+        });
+
+        // table.on('tool(tea)',function (obj) {
+        //     var data = obj.data;
+        //     var layEvent = obj.event;
+        //     if (layEvent === 'details'){
+        //         window.location.href="/teacherDetailsPage?id="+data.id
+        //     }
+        // });
+
+    });
+    $("table tr:first-child").css({
+        background: "none",
+        backgroundColor: "#0ba936",
+        color:"#ffffff"
+    });
+</script>
+</body>
+</html>

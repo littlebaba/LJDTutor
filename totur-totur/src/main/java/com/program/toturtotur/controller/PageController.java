@@ -49,6 +49,11 @@ public class PageController {
         return "student/students";
     }
 
+    @RequestMapping(value = "/teachersPage")
+    public String teachersPage(){
+        return "teacher/teachers";
+    }
+
     @RequestMapping(value = "/studentDetailsPage")
     public String studentsDetialPage(@RequestParam(value = "id") Integer id, Model model){
         LayUIPageBean<Student> layUIPageBean = new LayUIPageBean<Student>();
@@ -110,5 +115,6 @@ public class PageController {
         Teacher t = teacherService.save(teach);
         return "redirect:/home";
     }
+
 }
 

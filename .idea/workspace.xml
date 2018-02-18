@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/log.log" afterPath="$PROJECT_DIR$/log.log" />
       <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" afterPath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" />
-      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html" />
-      <change beforePath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java" afterPath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html" />
     </list>
     <ignored path="$PROJECT_DIR$/tutor-common/target/" />
     <ignored path="$PROJECT_DIR$/tutor-parent/target/" />
@@ -27,77 +26,61 @@
       <file leaf-file-name="PageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="e#1211#1212#0" expanded="true" />
                 <element signature="e#1241#1242#0" expanded="true" />
                 <element signature="e#1321#1322#0" expanded="true" />
                 <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#2698#2699#0" expanded="true" />
-                <element signature="e#2737#2738#0" expanded="true" />
-                <element signature="e#2836#2837#0" expanded="true" />
-                <element signature="e#2877#2878#0" expanded="true" />
-                <element signature="e#3428#3429#0" expanded="true" />
-                <element signature="e#3472#3473#0" expanded="true" />
+                <element signature="e#1442#1443#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+                <element signature="e#2858#2859#0" expanded="true" />
+                <element signature="e#2957#2958#0" expanded="true" />
+                <element signature="e#2998#2999#0" expanded="true" />
+                <element signature="e#3549#3550#0" expanded="true" />
+                <element signature="e#3593#3594#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teachRegTwo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#17;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#17;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#18;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#18;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#19;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stuReg.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="377">
+              <caret line="108" column="11" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="108" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java">
+      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
-                <element signature="e#2100#2101#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
-                <element signature="e#2204#2205#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-                <element signature="e#2350#2351#0" expanded="true" />
-                <element signature="e#2406#2407#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
+      <file leaf-file-name="students.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            <state relative-caret-position="323">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teachers.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,6 +110,7 @@
       <find>eq</find>
       <find>style</find>
       <find>initDate</find>
+      <find>dateFun</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tutor-common/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/enums/StateEnum.java" />
         <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/TutorCommonApplicationTests.java" />
         <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/dao/StudentDaoTest.java" />
@@ -173,7 +156,6 @@
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/StudentService.java" />
@@ -181,7 +163,6 @@
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/studentDetails.html" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teacherDetails.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html" />
         <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/role.java" />
@@ -193,10 +174,13 @@
         <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachReg.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html" />
         <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html" />
       </list>
     </option>
   </component>
@@ -207,10 +191,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-152" />
-    <option name="y" value="74" />
+    <option name="x" value="-139" />
+    <option name="y" value="56" />
     <option name="width" value="1378" />
-    <option name="height" value="672" />
+    <option name="height" value="667" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -516,7 +500,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -556,46 +543,6 @@
               <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -606,27 +553,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
@@ -726,9 +652,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -758,6 +681,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.program.toturtotur.service" />
     </key>
@@ -769,14 +695,11 @@
       <recent name="com.program.tutorcommon.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\templates\teacher" />
       <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static" />
+      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\templates\teacher" />
       <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\js" />
       <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\css" />
       <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -795,7 +718,7 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.23433875" />
+    <option name="contentProportion" value="0.16627997" />
   </component>
   <component name="RunManager" selected="Spring Boot.TutorCommonApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1075,7 +998,8 @@
       <workItem from="1518489112285" duration="5368000" />
       <workItem from="1518601346495" duration="47000" />
       <workItem from="1518601450709" duration="17582000" />
-      <workItem from="1518756977920" duration="14373000" />
+      <workItem from="1518756977920" duration="14507000" />
+      <workItem from="1518960172581" duration="4175000" />
     </task>
     <task id="LOCAL-00001" summary="idea生成文件">
       <created>1517391742298</created>
@@ -1301,7 +1225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518622901842</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="老师注册基本完成">
+      <created>1518793333811</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1518793333811</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1337,7 +1268,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257420000" />
+    <option name="totallyTimeSpent" value="261729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1349,7 +1280,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-152" y="74" width="1378" height="672" extended-state="0" />
+    <frame x="-139" y="56" width="1378" height="667" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1368,12 +1299,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21682243" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7347611" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6490939" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7545305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28907436" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19423369" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21482602" sideWeight="0.50576603" order="8" side_tool="true" content_ui="tabs" />
@@ -1439,7 +1370,8 @@
     <MESSAGE value="stuRegPage完成中" />
     <MESSAGE value="stuRegPage样式完成" />
     <MESSAGE value="老师的注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="老师的注册" />
+    <MESSAGE value="老师注册基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="老师注册基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1455,13 +1387,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/comment/LayUIPageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutor-common/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1497,13 +1422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/node_modules/parse-cn-idcard/bin/parse-id.js" />
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/js/require.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1524,24 +1442,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/node_modules/parse-cn-idcard/data/chinese-id-card-area.csv" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1558,13 +1462,6 @@
         <state relative-caret-position="114">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1593,10 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="187" column="26" lean-forward="true" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#fieldset#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1780,15 +1673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1797,6 +1681,24 @@
         <state relative-caret-position="133">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1501">
+          <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2065#2066#0" expanded="false" />
+            <element signature="e#2100#2101#0" expanded="false" />
+            <element signature="e#2156#2157#0" expanded="false" />
+            <element signature="e#2204#2205#0" expanded="false" />
+            <element signature="e#2247#2248#0" expanded="false" />
+            <element signature="e#2286#2287#0" expanded="false" />
+            <element signature="e#2350#2351#0" expanded="false" />
+            <element signature="e#2406#2407#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1810,61 +1712,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        <state relative-caret-position="247">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#17;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#17;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#18;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#18;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#19;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#16;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#17;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#17;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#18;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#18;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#div#19;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java">
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding>
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#2698#2699#0" expanded="true" />
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2836#2837#0" expanded="true" />
-            <element signature="e#2877#2878#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3472#3473#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java">
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="92" column="26" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
-            <element signature="e#2406#2407#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="57">
+          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="377">
+          <caret line="108" column="11" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="108" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2858#2859#0" expanded="true" />
+            <element signature="e#2957#2958#0" expanded="true" />
+            <element signature="e#2998#2999#0" expanded="true" />
+            <element signature="e#3549#3550#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
