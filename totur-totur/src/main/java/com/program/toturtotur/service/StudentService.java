@@ -14,4 +14,6 @@ import java.util.List;
 public interface StudentService extends BaseService<Student>{
 
     Page<Student> fetchTopTen(Sort sort);
+
+    Page<Student> findByPage(Student student,int pageNo,int limit);
 }

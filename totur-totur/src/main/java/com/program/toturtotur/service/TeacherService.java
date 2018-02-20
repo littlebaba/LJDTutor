@@ -12,5 +12,5 @@ import org.springframework.data.domain.Sort;
 public interface TeacherService extends BaseService<Teacher>{
 
     Page<Teacher> fetchTopTen(Sort sort);
-
+    Page<Teacher> findByPage(Teacher teacher,int pageNo,int limit);
 }

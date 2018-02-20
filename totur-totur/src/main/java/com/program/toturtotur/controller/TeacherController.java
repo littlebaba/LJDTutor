@@ -10,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -35,5 +36,20 @@ public class TeacherController {
         layUIPageBean.setData(topTenS);
         return layUIPageBean;
 
+    }
+
+    @GetMapping(value = "/all")
+    public LayUIPageBean getAllTeachers(Teacher teacher,
+                                        @RequestParam(required = false, defaultValue = "1") int page,
+                                        @RequestParam(required = false, defaultValue = "10") int limit) {
+        int pageNo = page % limit-1;
+        Page<Teacher> pageStu = teacherService.findByPage(teacher,pageNo,limit);
+
+        LayUIPageBean<Teacher> layUIPageBean = new LayUIPageBean<Teacher>();
+        layUIPageBean.setCode(0);
+        layUIPageBean.setCount(pageStu.getTotalElements());
+        layUIPageBean.setMsg("查询成功2");
+        layUIPageBean.setData(pageStu.getContent());
+        return layUIPageBean;
     }
 }
