@@ -115,6 +115,5 @@ public class PageController {
         Teacher t = teacherService.save(teach);
         return "redirect:/home";
     }
-
 }
 
