@@ -1,17 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="totur-totur:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e28ebf-9064-4e98-9754-9e2e0cc41ad6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/log.log" afterPath="$PROJECT_DIR$/log.log" />
-      <change beforePath="$PROJECT_DIR$/log.log.1" afterPath="$PROJECT_DIR$/log.log.1" />
-      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" afterPath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" />
-      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/TeacherServiceImpl.java" afterPath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/TeacherServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/LJDTutor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LJDTutor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/totur_totur_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/totur_totur_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_theborakompanioni_thymeleaf_extras_shiro_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_43.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_crazycake_shiro_redis_2_4_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/log.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/log.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/static/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/static/js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachReg.html" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachReg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/test/java/com/program/toturtotur/ToturToturApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/src/test/java/com/program/toturtotur/service/impl/StudentServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/totur-totur/totur-totur.iml" beforeDir="false" afterPath="$PROJECT_DIR$/totur-totur/totur-totur.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/TutorCommonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/TutorCommonApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/TutorCommonApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/base/ResultProcessorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/dao/StudentDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/target/classes/com/program/tutorcommon/TutorCommonApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/target/classes/com/program/tutorcommon/TutorCommonApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/target/test-classes/com/program/tutorcommon/TutorCommonApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-common/tutor-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tutor-common/tutor-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-parent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutor-parent/tutor-parent.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tutor-common/target/" />
     <ignored path="$PROJECT_DIR$/tutor-parent/target/" />
     <ignored path="$PROJECT_DIR$/totur-totur/target/" />
+    <ignored path="$PROJECT_DIR$/tutor-rest/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,78 +157,18 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/LJDTutor$TutorRestApplication.coverage" NAME="TutorRestApplication Coverage Results" MODIFIED="1520329731554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.program.tutorrest.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java">
+      <file leaf-file-name="ToturToturApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="116" column="5" lean-forward="false" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
-              <folding>
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-                <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1483#1484#0" expanded="true" />
-                <element signature="e#2819#2820#0" expanded="true" />
-                <element signature="e#2858#2859#0" expanded="true" />
-                <element signature="e#2957#2958#0" expanded="true" />
-                <element signature="e#2998#2999#0" expanded="true" />
-                <element signature="e#3549#3550#0" expanded="true" />
-                <element signature="e#3593#3594#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="100" column="3" lean-forward="false" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teachers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/StudentService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/TeacherServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="121">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,22 +176,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="798">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeacherService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/TeacherService.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="630">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="totur.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutor-common/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -127,11 +227,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -146,15 +246,26 @@
       <find>style</find>
       <find>initDate</find>
       <find>dateFun</find>
+      <find>stuReg</find>
+      <find>teachReg</find>
+      <find>teachRegOne</find>
+      <find>start-</find>
+      <find>start</find>
+      <find>HttpServletRequest</find>
+      <find>meta</find>
+      <find>common/common</find>
+      <find>common/nav</find>
+      <find>img</find>
+      <find>nekohtml</find>
+      <find>sh</find>
+      <find>fasr</find>
+      <find>/students</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
     <option name="projectSyncType">
       <map>
         <entry key="F:/NewIdeaProjects/FS-Blog" value="PREVIEW" />
@@ -165,57 +276,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/enums/StateEnum.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/TutorCommonApplicationTests.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/dao/StudentDaoTest.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dto/TutorResult.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/ResultProcessor.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/exception/ServiceProcessException.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/base/ResultProcessorTest.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties" />
-        <option value="$PROJECT_DIR$/totur-totur/src/test/java/com/program/toturtotur/ToturToturApplicationTests.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/base/BaseServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/del/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/test/java/com/program/tutorcommon/del/StudentServiceImpllTest.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseService.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseController.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/test/java/com/program/toturtotur/service/impl/StudentServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/totur-totur/pom.xml" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/config/TutorConfig.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/student.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/comment/LayUIPageBean.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/static/js/utils.js" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/studentDetails.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teacherDetails.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/role.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Role.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Student.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/StuUser.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/User.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/UserService.java" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachReg.html" />
-        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html" />
-        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" />
         <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/config/MyAdapter.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/Swagger2Configuration.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/test/java/com/program/tutorrest/controller/UserControllerTest.java" />
+        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/User.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/resources/resource.properties" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/controller/PropertiesConfig.java" />
+        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/shiro/MyShiroRealm.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/config/PropertiesConfig.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/config/RestConfig.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/service/UserService.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/service/impl/RedisService.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/service/RedisService.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/test/java/com/program/tutorrest/service/impl/RedisServiceTest.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/test/java/com/program/tutorrest/service/RedisServiceTest.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/test/java/com/program/tutorrest/service/impl/UserServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/TutorRestApplication.java" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/resources/rest.properties" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/UserService.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/test/java/com/program/toturtotur/service/impl/UserServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/config/MyRealm.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/utils/SecurityUtil.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/test/java/com/program/toturtotur/utils/SecurityUtilTest.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachReg.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/static/js/utils.js" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html" />
+        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/TutorCommonApplication.java" />
+        <option value="$PROJECT_DIR$/tutor-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/tutor-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tutor-common/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/totur-totur/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/tutor-common/pom.xml" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/config/TutorConfig.java" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html" />
+        <option value="$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java" />
       </list>
     </option>
   </component>
@@ -225,11 +336,27 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="LJDTutor" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="LJDTutor" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
-    <option name="y" value="58" />
-    <option name="width" value="1311" />
-    <option name="height" value="703" />
+    <option name="x" value="109" />
+    <option name="y" value="22" />
+    <option name="width" value="1377" />
+    <option name="height" value="662" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -521,20 +648,13 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -585,28 +705,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="totur-totur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="toturtotur" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
@@ -633,7 +732,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
@@ -686,62 +785,53 @@
               <item name="tutor-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorcommon" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LJDTutor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LJDTutor" type="462c0819:PsiDirectoryNode" />
-              <item name="tutor-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorcommon" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-socks" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.program.toturtotur.utils" />
       <recent name="com.program.toturtotur.service.impl" />
-      <recent name="com.program.tutorcommon.del" />
-      <recent name="com.program.tutorcommon.base" />
-      <recent name="com.program.tutorcommon.dao" />
+      <recent name="com.program.tutorrest.service.impl" />
+      <recent name="com.program.tutorrest.service" />
+      <recent name="com.program.tutorrest.controller" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.program.tutorrest.service" />
       <recent name="com.program.toturtotur.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\NewIdeaPro2018\LJDTutor" />
+      <recent name="F:\NewIdeaPro2018\LJDTutor\tutor-rest\src\main\resources" />
+      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\js" />
+      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static" />
+      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\templates\teacher" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.program.toturtotur.service.impl" />
@@ -750,12 +840,9 @@
       <recent name="com.program.tutorcommon.base" />
       <recent name="com.program.tutorcommon.dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources" />
       <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static" />
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\templates\teacher" />
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\js" />
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\css" />
-      <recent name="F:\NewIdeaPro2018\LJDTutor\totur-totur\src\main\resources\static\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -774,157 +861,131 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.20108275" />
+    <option name="contentProportion" value="0.40433773" />
   </component>
   <component name="RunManager" selected="Spring Boot.TutorCommonApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
-    <configuration name="BaseServiceImplTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.program.tutorcommon.base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tutor-common" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.program.tutorcommon.base" />
-      <option name="MAIN_CLASS_NAME" value="com.program.tutorcommon.base.BaseServiceImplTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="StudentDaoTest.findStudentByMobile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.program.tutorcommon.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tutor-common" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.program.tutorcommon.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.program.tutorcommon.dao.StudentDaoTest" />
-      <option name="METHOD_NAME" value="findStudentByMobile" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="StudentServiceImplTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.program.toturtotur.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="SecurityUtilTest.aesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="totur-totur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.program.toturtotur.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.program.toturtotur.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.utils.SecurityUtilTest" />
+      <option name="METHOD_NAME" value="aesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SecurityUtilTest.deaesCipher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="totur-totur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.program.toturtotur.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.program.toturtotur.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.utils.SecurityUtilTest" />
+      <option name="METHOD_NAME" value="deaesCipher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SecurityUtilTest.md5Test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="totur-totur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.program.toturtotur.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.program.toturtotur.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.utils.SecurityUtilTest" />
+      <option name="METHOD_NAME" value="md5Test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SecurityUtilTest.md5Test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="totur-totur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.program.toturtotur.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.program.toturtotur.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.utils.SecurityUtilTest" />
+      <option name="METHOD_NAME" value="md5Test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UserServiceImplTest.register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="totur-totur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.program.toturtotur.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.program.toturtotur.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.service.impl.StudentServiceImplTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.service.impl.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="register" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="StudentServiceImpllTest.demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.program.tutorcommon.del.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tutor-common" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.program.tutorcommon.del" />
-      <option name="MAIN_CLASS_NAME" value="com.program.tutorcommon.del.StudentServiceImpllTest" />
-      <option name="METHOD_NAME" value="demo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ToturToturApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.program.toturtotur.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="totur-totur" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.program.toturtotur" />
-      <option name="MAIN_CLASS_NAME" value="com.program.toturtotur.ToturToturApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
       <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -934,36 +995,21 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration name="ToturToturApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.program.toturtotur.ToturToturApplication" />
       <module name="totur-totur" />
-      <envs />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.program.toturtotur.ToturToturApplication" />
     </configuration>
     <configuration name="TutorCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.program.tutorcommon.TutorCommonApplication" />
       <module name="tutor-common" />
-      <envs />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.program.tutorcommon.TutorCommonApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -976,17 +1022,31 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="LJDTutor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -994,27 +1054,24 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.TutorCommonApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.ToturToturApplication" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StudentDaoTest.findStudentByMobile" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ToturToturApplicationTests.contextLoads" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BaseServiceImplTest.findAll" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.StudentServiceImpllTest.demo" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.StudentServiceImplTest.test1" />
+    <list>
+      <item itemvalue="Spring Boot.TutorCommonApplication" />
+      <item itemvalue="Spring Boot.ToturToturApplication" />
+      <item itemvalue="JUnit.UserServiceImplTest.register" />
+      <item itemvalue="JUnit.SecurityUtilTest.deaesCipher" />
+      <item itemvalue="JUnit.SecurityUtilTest.aesTest" />
+      <item itemvalue="JUnit.SecurityUtilTest.md5Test1" />
+      <item itemvalue="JUnit.SecurityUtilTest.md5Test2" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StudentServiceImplTest.test1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StudentServiceImpllTest.demo" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BaseServiceImplTest.findAll" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ToturToturApplicationTests.contextLoads" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StudentDaoTest.findStudentByMobile" />
+      <list>
+        <item itemvalue="JUnit.SecurityUtilTest.md5Test2" />
+        <item itemvalue="JUnit.SecurityUtilTest.md5Test1" />
+        <item itemvalue="JUnit.UserServiceImplTest.register" />
+        <item itemvalue="JUnit.SecurityUtilTest.aesTest" />
+        <item itemvalue="JUnit.SecurityUtilTest.deaesCipher" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SpringBeansView">
     <option name="showImplicitBeans" value="false" />
@@ -1058,7 +1115,40 @@
       <workItem from="1518960172581" duration="4281000" />
       <workItem from="1519044475966" duration="3051000" />
       <workItem from="1519093926543" duration="11253000" />
-      <workItem from="1519207120120" duration="6380000" />
+      <workItem from="1519207120120" duration="6487000" />
+      <workItem from="1519267294973" duration="14410000" />
+      <workItem from="1519358279302" duration="9389000" />
+      <workItem from="1519551588720" duration="1447000" />
+      <workItem from="1519657153544" duration="1773000" />
+      <workItem from="1519692024916" duration="4174000" />
+      <workItem from="1519955326719" duration="6421000" />
+      <workItem from="1519978027924" duration="4868000" />
+      <workItem from="1519990929240" duration="7854000" />
+      <workItem from="1520038026965" duration="7427000" />
+      <workItem from="1520060688354" duration="152000" />
+      <workItem from="1520060864352" duration="1985000" />
+      <workItem from="1520320616764" duration="9113000" />
+      <workItem from="1520336134629" duration="1935000" />
+      <workItem from="1522228196103" duration="1732000" />
+      <workItem from="1522236715550" duration="7214000" />
+      <workItem from="1524472690278" duration="1350000" />
+      <workItem from="1524560193301" duration="37000" />
+      <workItem from="1524560274782" duration="2000" />
+      <workItem from="1524560411606" duration="3000" />
+      <workItem from="1524560489763" duration="598000" />
+      <workItem from="1524648712041" duration="1730000" />
+      <workItem from="1524725877691" duration="139000" />
+      <workItem from="1525959601802" duration="908000" />
+      <workItem from="1526117010918" duration="14671000" />
+      <workItem from="1526173195090" duration="4192000" />
+      <workItem from="1526198689443" duration="11695000" />
+      <workItem from="1526456209781" duration="723000" />
+      <workItem from="1526643899996" duration="2942000" />
+      <workItem from="1532416383150" duration="4115000" />
+      <workItem from="1532421231468" duration="1857000" />
+      <workItem from="1532484228770" duration="25767000" />
+      <workItem from="1532570562402" duration="11266000" />
+      <workItem from="1532591648122" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="idea生成文件">
       <created>1517391742298</created>
@@ -1305,43 +1395,50 @@
       <option name="project" value="LOCAL" />
       <updated>1519136467911</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="老师搜索基本完成">
+      <created>1519228080857</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1519228080857</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 35m 54s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test2 - 2018.05.13 at 10h 01m 04s.xml">
+      <configuration name="SecurityUtilTest.md5Test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 38m 58s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test1 - 2018.05.13 at 10h 01m 54s.xml">
+      <configuration name="SecurityUtilTest.md5Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 40m 12s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test2 - 2018.05.13 at 10h 02m 06s.xml">
+      <configuration name="SecurityUtilTest.md5Test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 45m 33s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test1 - 2018.05.13 at 16h 07m 44s.xml">
+      <configuration name="SecurityUtilTest.md5Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 45m 45s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test2 - 2018.05.13 at 16h 08m 14s.xml">
+      <configuration name="SecurityUtilTest.md5Test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 51m 48s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test2 - 2018.05.13 at 16h 09m 27s.xml">
+      <configuration name="SecurityUtilTest.md5Test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 52m 13s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test2 - 2018.05.13 at 16h 12m 08s.xml">
+      <configuration name="SecurityUtilTest.md5Test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 52m 57s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test1 - 2018.05.13 at 16h 15m 03s.xml">
+      <configuration name="SecurityUtilTest.md5Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_test1 - 2018.02.03 at 17h 57m 35s.xml">
-      <configuration name="StudentServiceImplTest.test1" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test1 - 2018.05.13 at 16h 16m 41s.xml">
+      <configuration name="SecurityUtilTest.md5Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImpllTest_demo - 2018.02.03 at 17h 43m 50s.xml">
-      <configuration name="StudentServiceImpllTest.demo" configurationId="JUnit" />
+    <history-entry file="SecurityUtilTest_md5Test2 - 2018.05.13 at 16h 18m 04s.xml">
+      <configuration name="SecurityUtilTest.md5Test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282519000" />
+    <option name="totallyTimeSpent" value="444825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1353,45 +1450,46 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="58" width="1311" height="703" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3878887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38056013" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14840989" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6490939" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7545305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27098322" sideWeight="0.49423394" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21482602" sideWeight="0.50576603" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24929444" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.18532526" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.2685325" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.08099174" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.03305785" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3294893" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.3322314" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.6490939" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16694215" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32561985" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.37355372" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.3294893" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49423394" visible="true" weight="0.19288956" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info id="Web" order="8" sideWeight="0.50576603" side_tool="true" weight="0.21482602" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="right" id="Properties" order="5" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.328125" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24886535" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32784185" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1446,367 +1544,381 @@
     <MESSAGE value="老师注册基本完成" />
     <MESSAGE value="学员库 、教员库 基本完成" />
     <MESSAGE value="学员和老师分页基本完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="学员和老师分页基本完成" />
+    <MESSAGE value="老师搜索基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="老师搜索基本完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Table.class</url>
+          <url>file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java</url>
+          <line>30</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="75" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="AopUtils.isEqualsMethod(method)" />
+        <watch expression="retVal" />
+      </configuration>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="user" />
+        <watch expression="SecurityUtil.deaesCipher(user.getPassword())" />
+        <watch expression="SecurityUtil.md5Base64(user.getPassword())" />
+        <watch expression="SecurityUtil.md5Base64(user.getPassword())" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="hash(key)" />
+        <watch expression="args" />
+        <watch expression="sun.misc.Launcher.getBootstrapClassPath()" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        <state relative-caret-position="336">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/SubjectDao.java">
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="84">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Subject.java">
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/config/MyRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/js/layui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/node_modules/parse-cn-idcard/bin/parse-id.js" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/js/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/parse-cn-idcard/data/chinese-id-card-area.csv" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/node_modules/commander/index.js" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/parse-cn-idcard/test/test.js" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/parse-cn-idcard/bin/parse-id.js" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/node_modules/parse-cn-idcard/data/chinese-id-card-area.csv" />
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/TutorCommonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teacherDetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-722">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/js/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/ui/Model.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/studentDetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="187" column="26" lean-forward="true" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="459" column="0" lean-forward="false" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="531" column="0" lean-forward="false" selection-start-line="531" selection-start-column="0" selection-end-line="531" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.log.1" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Table.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="282" column="40" lean-forward="false" selection-start-line="282" selection-start-column="40" selection-end-line="282" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="55" column="15" lean-forward="false" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+        <state relative-caret-position="231">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="95">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="793" column="4" selection-start-line="793" selection-start-column="4" selection-end-line="793" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/druid/1.0.29/druid-1.0.29.jar!/support/http/resources/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="1" column="30745" selection-start-line="1" selection-start-column="23763" selection-end-line="1" selection-end-column="30745" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/static/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.log.1" />
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Grade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/service/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/StudentDao.java">
+    <entry file="file://$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="-1394">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dao/TeacherDao.java">
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/comment/LayUIPageBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="17" column="91" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="91" />
-          <folding />
+        <state relative-caret-position="-210">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachReg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        <state relative-caret-position="378">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/stuReg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="42">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachRegTwo.html">
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/dto/TutorResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        <state relative-caret-position="131">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
+        <state relative-caret-position="-126" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html">
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/bind/annotation/GetMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="100" column="3" lean-forward="false" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="51" column="5" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/student/students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="67" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="131">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="116" column="5" lean-forward="false" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
-          <folding>
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#2858#2859#0" expanded="true" />
-            <element signature="e#2957#2958#0" expanded="true" />
-            <element signature="e#2998#2999#0" expanded="true" />
-            <element signature="e#3549#3550#0" expanded="true" />
-            <element signature="e#3593#3594#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="546">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html">
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/utils/SecurityUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-rest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/Swagger2Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-rest/src/main/java/com/program/tutorrest/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="231">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/TeacherService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="147">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/impl/TeacherServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="168">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/base/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/java/com/program/tutorcommon/TutorCommonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-parent/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/config/TutorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teacherDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2369">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/teacher/teachers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor-common/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/totur.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/foot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/common.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/resources/templates/common/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/totur-totur/src/main/java/com/program/toturtotur/ToturToturApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1819,10 +1931,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>totur-totur:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1871,7 +1985,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1879,7 +1992,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

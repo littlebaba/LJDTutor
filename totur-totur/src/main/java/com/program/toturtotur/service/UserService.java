@@ -1,10 +1,21 @@
 package com.program.toturtotur.service;
 
-import com.program.tutorcommon.base.BaseService;
 import com.program.tutorcommon.entity.User;
 
 /**
- * @author Li on 2018/2/14.
+ * @author Li on 2018/5/12.
  */
-public interface UserService extends BaseService<User> {
+public interface UserService {
+
+    /**
+     * 注册
+     */
+    int register(User user);
+
+    /**
+     * 登录
+     */
+
+    int login(User user);
+
 }

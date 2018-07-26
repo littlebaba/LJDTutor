@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:include="common/common">
-</head>
+<head th:include="common/common"></head>
 
 <body>
     <div th:include="common/nav :: nav"></div>
@@ -17,10 +16,24 @@
                 </div>
             </div>
 
-            <div class="layui-form-item">
+            <!--<div class="layui-form-item">
                 <label class="layui-form-label">年级</label>
                 <div class="layui-input-inline">
                     <input type="text" name="grade" value="1" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                </div>
+            </div>-->
+            <div class="layui-form-item">
+                <label class="layui-form-label">年级</label>
+                <div class="layui-input-inline">
+                    <select name="grade" lay-verify="" title="dd0">
+                        <option value="1">一年级</option>
+                        <option value="2">二年级</option>
+                        <option value="3">三年级</option>
+                        <option value="4">四年级</option>
+                        <option value="5">五年级</option>
+                        <option value="6">六年级</option>
+                        <option value="7">七年级</option>
+                    </select>
                 </div>
             </div>
 

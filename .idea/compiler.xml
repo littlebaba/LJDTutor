@@ -8,12 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="totur-totur" />
         <module name="tutor-common" />
+        <module name="tutor-rest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="LJDTutor" target="1.8" />
       <module name="totur-totur" target="1.8" />
       <module name="tutor-common" target="1.8" />
       <module name="tutor-parent" target="1.5" />
+      <module name="tutor-rest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,9 +1,28 @@
-<div th:fragment="nav" xmlns:th="http://www.w3.org/1999/xhtml">
+<!--header fragment-->
+<div th:fragment="nav" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.w3.org/1999/xhtml">
     <ul class="layui-nav layui-bg-molv" lay-filter="">
         <li class="layui-nav-item layui-this"><a href="/home">首页</a></li>
-        <li class="layui-nav-item"><a href="/stuRegPage">请老师</a></li>
-        <li class="layui-nav-item"><a href="/teachRegPage">做老师</a></li>
+        <li class="layui-nav-item"><a href="http://localhost:8080/stuRegPage">请老师</a></li>
+        <li class="layui-nav-item"><a href="http://localhost:8080/teachRegPage">做老师</a></li>
         <li class="layui-nav-item"><a href="/studentsPage">学员库</a></li>
         <li class="layui-nav-item"><a href="/teachersPage">教员库</a></li>
+        <li class="layui-nav-item layui-layout-right" style="margin-right: 160px">
+
+            <a href="/login"><img src="http://t.cn/RCzsdCq" class="layui-nav-img"/>未登录</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;">修改信息</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd><a href="javascript:;">退了</a></dd>
+            </dl>
+        </li>
     </ul>
+
+<script th:src="@{/js/layui.js}"></script>
+<script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+<script th:src="@{/js/jquery.cookie.js}"></script>
+    <script>
+        //获取用户信息，渲染页面
+        var htm = "";
+        // $.get();
+    </script>
 </div>

@@ -2,6 +2,8 @@ package com.program.toturtotur;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cache.annotation.EnableCaching;
 
 import java.io.IOException;
@@ -9,8 +11,15 @@ import java.io.InputStream;
 import java.util.Properties;
 
 @SpringBootApplication
-//@EnableCaching//缓存支持
-public class ToturToturApplication {
+@EnableCaching//缓存支持
+public class ToturToturApplication
+//		extends SpringBootServletInitializer
+{
+
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return builder.sources(ToturToturApplication.class);
+//	}
 
 	public static void main(String[] args) throws IOException {
 		//更改properties配置文件名称，避免依赖冲突

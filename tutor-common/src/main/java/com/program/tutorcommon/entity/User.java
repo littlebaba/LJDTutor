@@ -1,9 +1,12 @@
 package com.program.tutorcommon.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.program.tutorcommon.utils.Constants;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,10 +20,21 @@ public class User implements Serializable{
     @GeneratedValue
     private Integer id;
 
+    private String email;
+
+    // 头像
+    private String icon ="http://127.0.0.1/images/upload/default.png";
+
+    // 个人签名
+    private String signature;
+
     private String username;
     @JsonIgnore
     private String password;
 
+
+    @JsonFormat(pattern = Constants.DATE_FORMAT, timezone = "GMT+8")
+    private Date initTime;
 
     @JsonIgnore
     @JoinTable(name = "totur_user_role",
@@ -28,6 +42,38 @@ public class User implements Serializable{
             inverseJoinColumns = {@JoinColumn(name = "role_id",referencedColumnName = "id")})
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Role> roles = new HashSet<Role>();
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public String getSignature() {
+        return signature;
+    }
+
+    public void setSignature(String signature) {
+        this.signature = signature;
+    }
+
+    public Date getInitTime() {
+        return initTime;
+    }
+
+    public void setInitTime(Date initTime) {
+        this.initTime = initTime;
+    }
 
     public Integer getId() {
         return id;

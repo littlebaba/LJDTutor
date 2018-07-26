@@ -4,12 +4,22 @@ import com.program.toturtotur.comment.LayUIPageBean;
 import com.program.toturtotur.service.StudentService;
 import com.program.toturtotur.service.TeacherService;
 import com.program.toturtotur.service.UserService;
+import com.program.toturtotur.utils.SecurityUtil;
+import com.program.tutorcommon.dao.UserDao;
 import com.program.tutorcommon.entity.Student;
 import com.program.tutorcommon.entity.Teacher;
 import com.program.tutorcommon.entity.User;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.session.Session;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,11 +34,14 @@ import java.util.List;
 @Controller
 public class PageController {
 
+    Log logger = LogFactory.getLog(PageController.class);
+
     /**
      * 主页面
      * @return
      */
-
+    @Autowired
+    UserDao userDao;
 
     @Autowired
     private StudentService studentService;
@@ -39,7 +52,7 @@ public class PageController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/home",method = RequestMethod.GET)
+    @RequestMapping(value ={"/","/home"},method = RequestMethod.GET)
     public String index(){
         return "index";
     }
@@ -101,7 +114,7 @@ public class PageController {
 
     @RequestMapping(value = "/teachRegOne",method = RequestMethod.POST)
     public String teachRegOne(HttpServletRequest request, User user,Model model){
-        User u = userService.save(user);
+        int u = userService.register(user);
         return "redirect:/teachRegTwo";
     }
 
@@ -115,5 +128,35 @@ public class PageController {
         Teacher t = teacherService.save(teach);
         return "redirect:/home";
     }
+
+    @RequestMapping(value = "/login")
+    public String login(){
+        return "login";
+    }
+
+
+    @RequestMapping(value = "/loginHandle")
+    public String loginHandle(HttpServletRequest request, User user,Model model){
+        if (StringUtils.isEmpty(user.getUsername().trim())||StringUtils.isEmpty(user.getPassword().trim())){
+            logger.error("用户名或密码不能为空");
+            return "login";
+        }
+        Subject subject = SecurityUtils.getSubject();
+        Session session = subject.getSession();
+        UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), SecurityUtil.md5Base64(user.getPassword()));
+        try {
+            subject.login(token);
+            session.setAttribute(user.getUsername(),user);
+            logger.warn("id: "+session.getId()+"主机 "+session.getHost()+"过期时间： "+session.getTimeout()+"" +
+                    "会话启动时间： "+session.getStartTimestamp()+"会话最终访问时间： "+session.getLastAccessTime()
+                    +"Keys:  "+session.getAttribute(user.getUsername()));
+
+            return "index";
+        } catch (AuthenticationException e) {
+            logger.error("用户名密码不正确");
+            return "login";
+        }
+    }
+
 }
 

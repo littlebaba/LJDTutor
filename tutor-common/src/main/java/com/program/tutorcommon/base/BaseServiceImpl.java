@@ -9,7 +9,6 @@ import java.util.List;
 /**
  * @author Li on 2018/2/1.
  */
-
 public class BaseServiceImpl<E extends JpaRepository,T> implements BaseService<T>{
 
     @Autowired
