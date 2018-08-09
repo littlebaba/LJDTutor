@@ -1,14 +1,14 @@
 package com.program.toturtotur.controller;
 
-import com.program.toturtotur.comment.LayUIPageBean;
+import com.program.toturtotur.entity.LayUIPageBean;
+import com.program.toturtotur.dao.UserDao;
+import com.program.toturtotur.entity.Student;
+import com.program.toturtotur.entity.Teacher;
+import com.program.toturtotur.entity.User;
 import com.program.toturtotur.service.StudentService;
 import com.program.toturtotur.service.TeacherService;
 import com.program.toturtotur.service.UserService;
 import com.program.toturtotur.utils.SecurityUtil;
-import com.program.tutorcommon.dao.UserDao;
-import com.program.tutorcommon.entity.Student;
-import com.program.tutorcommon.entity.Teacher;
-import com.program.tutorcommon.entity.User;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.shiro.SecurityUtils;
@@ -113,7 +113,7 @@ public class PageController {
     }
 
     @RequestMapping(value = "/teachRegOne",method = RequestMethod.POST)
-    public String teachRegOne(HttpServletRequest request, User user,Model model){
+    public String teachRegOne(HttpServletRequest request, User user, Model model){
         int u = userService.register(user);
         return "redirect:/teachRegTwo";
     }

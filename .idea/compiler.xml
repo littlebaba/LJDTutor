@@ -6,14 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="totur-totur" />
-        <module name="tutor-common" />
-        <module name="tutor-rest" />
+        <module name="LJDTutor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="LJDTutor" target="1.8" />
-      <module name="totur-totur" target="1.8" />
       <module name="tutor-common" target="1.8" />
       <module name="tutor-parent" target="1.5" />
       <module name="tutor-rest" target="1.8" />

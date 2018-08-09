@@ -1,10 +1,8 @@
 package com.program.toturtotur.controller;
 
-import com.program.toturtotur.comment.LayUIPageBean;
-import com.program.toturtotur.service.StudentService;
+import com.program.toturtotur.entity.LayUIPageBean;
+import com.program.toturtotur.entity.Teacher;
 import com.program.toturtotur.service.TeacherService;
-import com.program.tutorcommon.entity.Student;
-import com.program.tutorcommon.entity.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;

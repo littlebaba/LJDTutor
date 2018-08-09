@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/LJDTutor.iml" filepath="$PROJECT_DIR$/.idea/LJDTutor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/totur-totur/totur-totur.iml" filepath="$PROJECT_DIR$/totur-totur/totur-totur.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tutor-common/tutor-common.iml" filepath="$PROJECT_DIR$/tutor-common/tutor-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tutor-rest/tutor-rest.iml" filepath="$PROJECT_DIR$/tutor-rest/tutor-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/totur-totur/LJDTutor.iml" filepath="$PROJECT_DIR$/totur-totur/LJDTutor.iml" />
     </modules>
   </component>
 </project>

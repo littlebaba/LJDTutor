@@ -1,6 +1,7 @@
 package com.program.toturtotur.service;
 
-import com.program.tutorcommon.entity.User;
+
+import com.program.toturtotur.entity.User;
 
 /**
  * @author Li on 2018/5/12.

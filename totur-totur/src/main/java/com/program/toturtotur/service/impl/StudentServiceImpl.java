@@ -1,9 +1,9 @@
 package com.program.toturtotur.service.impl;
 
+import com.program.toturtotur.dao.StudentDao;
+import com.program.toturtotur.entity.Student;
 import com.program.toturtotur.service.StudentService;
-import com.program.tutorcommon.base.BaseServiceImpl;
-import com.program.tutorcommon.dao.StudentDao;
-import com.program.tutorcommon.entity.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -13,14 +13,15 @@ import org.springframework.stereotype.Service;
 
 import javax.persistence.criteria.*;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author Li on 2018/2/2.
  */
 @Service
-public class StudentServiceImpl extends BaseServiceImpl<StudentDao,Student> implements StudentService{
+public class StudentServiceImpl  implements StudentService{
 
+    @Autowired
+    StudentDao repository;
 
     @Override
     public Page<Student> fetchTopTen(Sort sort) {
@@ -49,5 +50,20 @@ public class StudentServiceImpl extends BaseServiceImpl<StudentDao,Student> impl
         };
         Page<Student> page = repository.findAll(specification,pageable);
         return page;
+    }
+
+    @Override
+    public long getCount() {
+        return repository.count();
+    }
+
+    @Override
+    public Student findOne(Integer id) {
+        return repository.findOne(id);
+    }
+
+    @Override
+    public Student save(Student stu) {
+        return repository.save(stu);
     }
 }

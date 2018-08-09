@@ -1,12 +1,10 @@
 package com.program.toturtotur.service.impl;
 
-import com.program.toturtotur.service.StudentService;
+import com.program.toturtotur.dao.StudentDao;
+import com.program.toturtotur.dao.TeacherDao;
+import com.program.toturtotur.entity.Teacher;
 import com.program.toturtotur.service.TeacherService;
-import com.program.tutorcommon.base.BaseServiceImpl;
-import com.program.tutorcommon.dao.StudentDao;
-import com.program.tutorcommon.dao.TeacherDao;
-import com.program.tutorcommon.entity.Student;
-import com.program.tutorcommon.entity.Teacher;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -22,8 +20,10 @@ import java.util.ArrayList;
  * @author Li on 2018/2/2.
  */
 @Service
-public class TeacherServiceImpl extends BaseServiceImpl<TeacherDao, Teacher> implements TeacherService {
+public class TeacherServiceImpl implements TeacherService {
 
+    @Autowired
+    TeacherDao repository;
 
     @Override
     public Page<Teacher> fetchTopTen(Sort sort) {
@@ -52,8 +52,8 @@ public class TeacherServiceImpl extends BaseServiceImpl<TeacherDao, Teacher> imp
                     lists.add(criteriaBuilder.like(teachSubjects, "%" + teacher.getTeachSubjects() + "%"));
                 }
 
-                if (!StringUtils.isEmpty(teacher.getProfession())){
-                    lists.add(criteriaBuilder.like(profession,"%"+teacher.getProfession()+"%"));
+                if (!StringUtils.isEmpty(teacher.getProfession())) {
+                    lists.add(criteriaBuilder.like(profession, "%" + teacher.getProfession() + "%"));
                 }
 
                 return criteriaBuilder.and(lists.toArray(new Predicate[lists.size()]));
@@ -61,5 +61,20 @@ public class TeacherServiceImpl extends BaseServiceImpl<TeacherDao, Teacher> imp
         };
         Page<Teacher> page = repository.findAll(specification, pageable);
         return page;
+    }
+
+    @Override
+    public long getCount() {
+        return 0;
+    }
+
+    @Override
+    public Teacher findOne(Integer id) {
+        return null;
+    }
+
+    @Override
+    public Teacher save(Teacher teach) {
+        return null;
     }
 }

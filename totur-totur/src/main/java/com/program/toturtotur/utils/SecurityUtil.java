@@ -1,6 +1,6 @@
 package com.program.toturtotur.utils;
 
-import com.program.tutorcommon.entity.User;
+import com.program.toturtotur.entity.User;
 import org.apache.shiro.authc.credential.PasswordService;
 import org.apache.shiro.codec.Hex;
 import org.apache.shiro.crypto.AesCipherService;

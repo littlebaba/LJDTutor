@@ -1,16 +1,13 @@
 package com.program.toturtotur.controller;
 
-import com.program.toturtotur.comment.LayUIPageBean;
+import com.program.toturtotur.entity.LayUIPageBean;
+import com.program.toturtotur.entity.Student;
 import com.program.toturtotur.service.StudentService;
-import com.program.tutorcommon.base.BaseController;
-import com.program.tutorcommon.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +15,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/students")
-public class StudentController extends BaseController {
+public class StudentController{
 
     @Autowired
     private StudentService studentService;
